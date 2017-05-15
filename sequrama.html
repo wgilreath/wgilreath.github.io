@@ -3,167 +3,17 @@
 <!-- Search Engine QUery Results AccuMulator Aggregator (SEQu-RAmA)
      CSS3, HTML5, JavaScript Source Code for Main Search Web Page
      Copyright (c) 2017  William F. Gilreath.  All Rights Reserved.
-     Revised April 22, 2017. 
+     Revised April 22, 2017.
 -->
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>SEQu-RAmA: Search Engine QUery - Results AccuMulator Aggregator</title>
 <!-- Quasi-modo method CSS to handle both JavaScript/non-JavaScript browsers with pseudo-tag -->
 <noscript>
 <style type="text/css"> .YesScript       { display: none;  }
-						.jsOn .YesScript { display: block; } 
+						.jsOn .YesScript { display: block; }
 </style>
 </noscript>
-<style type="text/css">
-#sequrama_search
-{
-    padding:100px;
-}
-
-.sequrama_input
-{
-    margin: 0;  
-    padding: 5px 15px;
-    font-family: Arial;
-    font-size:16px;
-    border:1px solid #0076a3; 
-    border-right:0px;
-    border-top-right-radius: 5px 5px;
-    border-top-left-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
-}
-
-.sequrama_query_button
-{
-    margin: 0;
-    padding: 5px 5px;
-    font-family: Verdana;
-    font-size:14px;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    color: #ffffff;
-    border: solid 1px #0076a3; border-right:0px;
-    background: #ff0000; 
-
-    border-top-right-radius: 5px 5px;
-    border-top-left-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
-}
-
-.sequrama_clear_button
-{
-    margin: 0;
-    padding: 5px 5px;
-    font-family: Verdana;
-    font-size:14px;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    color: #ffffff;
-    border: solid 1px #0076a3; border-right:0px;
-    background: #0095cd;
-    border-top-right-radius: 5px 5px;
-    border-top-left-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
-}
-
-table.centerBackgroundGrey 
-{
-    width:80%;
-    margin-left:5%;
-    margin-right:5%;
-    width: 1100px; 
-    height: 200px; 
-    background-color: #bbbbbb; 
-    text-align: center;
-}
-
-table.centerBackgroundWhite 
-{
-    width:80%;
-    margin-left:5%;
-    margin-right:5%;
-    width: 1100px; 
-    height: 200px; 
-    background-color: #ffffff; 
-    text-align: center;
-}
-
-div.footer
-{
-    text-align: center; 
-    font-family: Courier New; 
-    font-size: 11pt;
-}
-
-span.largeBlack
-{
-    color: rgb(0,   0,   0); 
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeRed
-{
-    color: rgb(255,   0,   0); 
-    font-family: Rockwell;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeOrange
-{
-    color: rgb(255,   153,   0); 
-    font-family: Optima;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeYellow
-{
-    color: rgb(255,   255,   0); 
-    font-family: Zorque;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largePink
-{
-    color: rgb(255, 153, 255);  
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeGreen
-{
-    color: rgb(51,  204,   0);
-    font-family: Baskerville;   
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeBlue
-{
-    color: rgb(51,   51, 255); 
-    font-family: Impact;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeViolet
-{
-    color: rgb(204, 102, 204); 
-    font-family: Verdana;   
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-</style>
-<head>  
+<link rel="stylesheet" type="text/css" href="sequrama.css" >
 <script type="text/javascript">
 function clearForm()
 {
@@ -189,23 +39,14 @@ function checkForm()
 </head>
 <body>
 <br/>
-<table class="centerBackgroundWhite">
-  <tbody>
-    <tr>
-      <td> 
+<header class="centerBackgroundWhite topHeader">
       <span class="largeRed">S</span> <span class="largeOrange">E</span>
       <span class="largeYellow">Qu</span> <span class="largePink">-</span>
       <span class="largeGreen">R</span> <span class="largeBlue">Am</span>
-      <span class="largeViolet">A</span> 
-      </td>
-    </tr>
-  </tbody>
-</table>
-<table class="centerBackgroundGrey">
-<tbody>
-<tr>
-<td>
-<form id="sequrama_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()"> 
+      <span class="largeViolet">A</span>
+</header>
+<section class="centerBackgroundGrey">
+<form id="sequrama_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()">
 <div class="YesScript">
 <select name="timeout" size="1">
   <option value="60">&nbsp;60-seconds</option>
@@ -214,12 +55,12 @@ function checkForm()
   <option value="120">120-seconds</option>
   <option value="150">150-seconds</option>
   <option value="180">180-seconds</option>
-</select>               
+</select>
 <input autofocus="" id="input" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
 <input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">
 <input onclick="clearForm()" class="sequrama_clear_button" value="Clear" type="button">
 <script type="text/javascript">
-	var jabberwocky = 
+	var jabberwocky =
 	[
 	  '`Twas brillig, and the slithy toves, Did gyre and gimble in the wabe!',
 	  'All mimsy were the borogoves, And the mome raths outgrabe.',
@@ -233,29 +74,29 @@ function checkForm()
 	  'He left it dead, and with its head, He went galumphing back.',
 	  'And, has thou slain the Jabberwock? Come to my arms, my beamish boy!',
 	  'O frabjous day! Callooh! Callay! He chortled in his joy.'
-	];    
-	
-	Array.prototype.randomLine = function() 
+	];
+
+	Array.prototype.randomLine = function()
 	{
 		return this[Math.floor(Math.random() * this.length)]
 	}
-						
+
 	var flag = true;
 	var text = document.querySelector("input");
-	
-	text.addEventListener("focus", 
+
+	text.addEventListener("focus",
 		function()
 		{
-			if(flag) 
+			if(flag)
 			{
-				text.value = jabberwocky.randomLine(); 
+				text.value = jabberwocky.randomLine();
 				flag = false;
-			} 
+			}
 		}
 	);
 </script>
 </div>
-<noscript>            
+<noscript>
 <select name="timeout" size="1">
   <option value="60">&nbsp;60-seconds</option>
   <option value="30">&nbsp;30-seconds</option>
@@ -263,24 +104,15 @@ function checkForm()
   <option value="120">120-seconds</option>
   <option value="120">150-seconds</option>
   <option value="120">180-seconds</option>
-</select>               
+</select>
 <input required="required" autofocus="" id="input_nojs" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
 <input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">
 <input class="sequrama_clear_button" value="Clear" type="reset">
 </noscript>
 </form>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="centerBackgroundWhite">
-<tbody>
-<tr>
-<td>
+</section>
+<footer class="centerBackgroundWhite">
 <div class="footer">Copyright © 2017 William F. Gilreath. All Rights Reserved.</div>
-</td>
-</tr>
-</tbody>
-</table>
+</footer>
 </body>
 </html>
