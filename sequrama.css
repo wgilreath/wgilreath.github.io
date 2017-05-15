@@ -1,0 +1,229 @@
+#sequrama_search
+{
+    padding:100px;
+}
+
+.sequrama_input
+{
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial;
+    font-size:16px;
+    border:1px solid #0076a3;
+    border-right:0px;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    width: 80%;
+}
+
+.sequrama_query_button
+{
+    margin: 0;
+    padding: 5px 5px;
+    font-family: Verdana;
+    font-size:14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #ff0000;
+
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+.sequrama_clear_button
+{
+    margin: 0;
+    padding: 5px 5px;
+    font-family: Verdana;
+    font-size:14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #0095cd;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+section.centerBackgroundGrey
+{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    background-color: #bbbbbb;
+    text-align: center;
+}
+
+header.centerBackgroundWhite, footer.centerBackgroundWhite
+{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+header.topHeader
+{
+  padding-top: 50px;
+}
+
+div.footer
+{
+    text-align: center;
+    font-family: Courier New;
+    font-size: 11pt;
+}
+
+span.largeBlack
+{
+    color: rgb(0,   0,   0);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.largeRed
+{
+    color: rgb(255,   0,   0);
+    font-family: Rockwell;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.largeOrange
+{
+    color: rgb(255,   153,   0);
+    font-family: Optima;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.largeYellow
+{
+    color: rgb(255,   255,   0);
+    font-family: Zorque;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.largePink
+{
+    color: rgb(255, 153, 255);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.largeGreen
+{
+    color: rgb(51,  204,   0);
+    font-family: Baskerville;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.largeBlue
+{
+    color: rgb(51,   51, 255);
+    font-family: Impact;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.largeViolet
+{
+    color: rgb(204, 102, 204);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 96pt;
+}
+
+span.smallBlack
+{
+     color: rgb(0,     0,   0);
+     font-family: Courier New;
+     font-weight: bold;
+     font-size: 13pt;
+}
+
+span.smallRed
+{
+    color: rgb(255,   0,   0);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallOrange
+{
+    color: rgb(255,   153,   0);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallYellow
+{
+    color: rgb(255,   255,   0);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallPink
+{
+    color: rgb(255, 153, 255);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallGreen
+{
+    color: rgb(51,  204,   0);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallBlue
+{
+    color: rgb(51,   51, 255);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallViolet
+{
+    color: rgb(204, 102, 204);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallPink
+{
+    color: rgb(255, 153, 255);
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+span.smallWhat
+{
+     color: rgb(0,     0,   0);
+     font-family: Georgia;
+     font-weight: bold;
+     font-size: 15pt;
+}
