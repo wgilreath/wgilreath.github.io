@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>New Life Fellowship Course Evaluation</title>
+<style type="text/css">
+@media print {
+    #printpagebutton {
+        display :  none;
+    }
+}
+</style>
+<script type="text/javascript">
+    function printPage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+        //Set the print button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Print the page content
+        window.print()
+        //Set the print button to 'visible' again 
+        //[Delete this line if you want it to stay hidden after printing]
+        printButton.style.visibility = 'visible';
+        alert("Please put your evaluation upside down in Scott's Inbox on his desk. Thank-you!");
+    }
+</script>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+<div style="text-align: center; font-weight: bold; font-family: Arial;">
+<big>NLF Course Evaluation</big>
+</div>
+<br>
+<table align="center" border="0">
+<tr><td>
+<fieldset>
+<legend>About</legend>
+<div style="text-align: center;">
+<form method="post" action="localhost:8080" name="course_information">
+<span style="font-family: Verdana;">Teacher:&nbsp;</span>
+  <select name="teacher">
+
+  <option>Danial Ficek</option>
+  <option>Ray Rodriguez</option>
+  <option>Steven Brace</option>
+  
+  </select>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span style="font-family: Verdana;"> Class:</span> 
+  <select name="class">
+
+  <option>Biblical Life Management</option>
+  <option>Romans</option>
+  <option>Seeking Safety/Trauma</option>
+  <option>Shame</option>
+  
+  </select>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<span style="font-family: Verdana;">Date: </span>
+<input id="date" name="date" size="20">
+<script type="text/javascript">
+document.getElementById("date").value = new Date().toString().substring(4,16); 
+</script>
+<br>
+</form>
+</fieldset>
+</div>
+<br>
+</td></tr>
+
+<tr><td>
+<fieldset>
+<legend>Content</legend>
+
+<form method="post" action="localhost:8080" name="course_content"><span style="text-decoration: underline;"></span><br>
+
+  <br>
+
+How personally useful was the material presented in the course you just
+completed?
+  
+  <select name="content">
+
+  <option>0 - Not At All</option>
+  <option>1 - Very Little</option>
+  <option>2 - Possibly</option>
+  <option>3 - Somewhat</option>
+  <option>4 - Very</option>
+  <option>5 - Extremely</option>
+  
+  </select>
+
+  <br>
+
+  <br>
+
+Please comment on the course material:<br>
+
+  <br>
+
+  <textarea cols="110" rows="8" name="content_comment"></textarea><br>
+
+  <br>
+</form>
+</fieldset>
+</td></tr>
+<tr><td>
+
+<fieldset>
+<legend>Instruction</legend>
+
+<form method="post" action="localhost:8080" name="course_instruction"><span style="text-decoration: underline;"></span><br>
+
+  <br>
+In general, how effective was your teacher in the course you just completed?&nbsp;
+  <select name="content">
+
+  <option>0 - Not At All</option>
+  <option>1 - Very Little</option>
+  <option>2 - Possibly</option>
+  <option>3 - Somewhat</option>
+  <option>4 - Very</option>
+  <option>5 - Extremely</option>
+  
+  </select>
+
+  &nbsp;
+  <br>
+
+  <br>
+
+Please offer comments on the instructor:<br>
+
+  <br>
+
+  <textarea cols="110" rows="8" name="content_comment"></textarea><br>
+  <br>
+
+  
+</form>
+</fieldset>
+</td></tr>
+<br>
+<tr><td>
+<fieldset>
+<legend>Overall</legend>
+
+<form method="post" action="localhost:8080" name="course_overall"><span style="text-decoration: underline;"></span><br>
+
+
+  <br>
+
+How satisfied are you with your experience in the course just completed?&nbsp;
+  <select name="content">
+
+
+  <option>0 - Not At All</option>
+  <option>1 - Very Little</option>
+  <option>2 - Possibly</option>
+  <option>3 - Somewhat</option>
+  <option>4 - Very</option>
+  <option>5 - Extremely</option>
+  
+  </select>
+
+
+  &nbsp;
+  <br>
+
+
+  <br>
+
+
+Please offer additional comments:<br>
+
+
+  <br>
+
+
+  <textarea cols="110" rows="8" name="content_comment"></textarea><br>
+
+
+</form>
+</fieldset>
+<br>
+</td></tr>
+<tr><td>
+<div style="text-align: center;">
+<hr>
+
+<input id="printpagebutton" type="button" value="Print this page" onclick="printPage()"/>
+
+<br>
+</div>
+<br>
+</td></tr>
+</body></html>
