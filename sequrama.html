@@ -1,32 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<!-- Search Engine QUery Results AccuMulator Aggregator (SEQu-RAmA)
-     CSS3, HTML5, JavaScript Source Code for Main Search Web Page
-     Copyright (c) 2017  William F. Gilreath.  All Rights Reserved.
-     Revised April 22, 2017. 
--->
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>SEQu-RAmA: Search Engine QUery - Results AccuMulator Aggregator</title>
-<!-- Quasi-modo method CSS to handle both JavaScript/non-JavaScript browsers with pseudo-tag -->
-<noscript>
-<style type="text/css"> .YesScript       { display: none;  }
-						.jsOn .YesScript { display: block; } 
-</style>
-</noscript>
+<script type="text/javascript">
+
+function checkForm()
+{
+    var x = document.forms["sequrama_search"]["params"].value;
+    if (x == null || x== "" )
+    {
+        //alert("SEQu-RAmA search requires keywords!");
+        return false;
+    }//end if
+}//end checkForm
+
+</script>
+
 <style type="text/css">
+
+#header 
+{
+text-align: center; 
+width: 100%;
+}
+#body 
+{
+width: 100%; 
+}
+#footer 
+{
+width: 100%;
+text-align: center;
+}
+
+
 #sequrama_search
 {
-    padding:100px;
+    padding:150px;
 }
 
 .sequrama_input
 {
+    align:center;
     margin: 0;  
     padding: 5px 15px;
     font-family: Arial;
     font-size:16px;
     border:1px solid #0076a3; 
-    border-right:0px;
     border-top-right-radius: 5px 5px;
     border-top-left-radius: 5px 5px;
     border-bottom-right-radius: 5px 5px;
@@ -35,6 +54,7 @@
 
 .sequrama_query_button
 {
+    align:right;
     margin: 0;
     padding: 5px 5px;
     font-family: Verdana;
@@ -52,45 +72,7 @@
     border-bottom-left-radius: 5px 5px;
 }
 
-.sequrama_clear_button
-{
-    margin: 0;
-    padding: 5px 5px;
-    font-family: Verdana;
-    font-size:14px;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    color: #ffffff;
-    border: solid 1px #0076a3; border-right:0px;
-    background: #0095cd;
-    border-top-right-radius: 5px 5px;
-    border-top-left-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
-}
 
-table.centerBackgroundGrey 
-{
-    width:80%;
-    margin-left:5%;
-    margin-right:5%;
-    width: 1100px; 
-    height: 200px; 
-    background-color: #bbbbbb; 
-    text-align: center;
-}
-
-table.centerBackgroundWhite 
-{
-    width:80%;
-    margin-left:5%;
-    margin-right:5%;
-    width: 1100px; 
-    height: 200px; 
-    background-color: #ffffff; 
-    text-align: center;
-}
 
 div.footer
 {
@@ -98,6 +80,7 @@ div.footer
     font-family: Courier New; 
     font-size: 11pt;
 }
+
 
 span.largeBlack
 {
@@ -162,125 +145,125 @@ span.largeViolet
     font-weight: bold; 
     font-size: 96pt;
 }   
-</style>
-<head>  
-<script type="text/javascript">
-function clearForm()
-{
-    var x = document.forms["sequrama_search"]["params"].value;
-    if (x == null || x== "" )
-    {
-        alert("SEQu-RAmA search field is clear!");
-        return;
-    }//end if
-    document.getElementById("input").value = '';
-}//end clearForm
 
-function checkForm()
+
+span.smallBlack
 {
-    var x = document.forms["sequrama_search"]["params"].value;
-    if (x == null || x== "" )
-    {
-        alert("SEQu-RAmA search requires keywords!");
-        return false;
-    }//end if
-}//end checkForm
-</script>
+     color: rgb(0,     0,   0); 
+     font-family: Courier New; 
+     font-weight: bold; 
+     font-size: 13pt; 
+}
+
+span.smallRed
+{
+    color: rgb(255,   0,   0); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallOrange
+{
+    color: rgb(255,   153,   0); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallYellow
+{
+    color: rgb(255,   255,   0); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallPink
+{
+    color: rgb(255, 153, 255);  
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallGreen
+{
+    color: rgb(51,  204,   0);
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallBlue
+{
+    color: rgb(51,   51, 255); 
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallViolet
+{
+    color: rgb(204, 102, 204); 
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallPink
+{
+    color: rgb(255, 153, 255); 
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+</style>
+
+	<meta charset="UTF-8">
+	<title>threeColumn.html</title> 
+
 </head>
 <body>
-<br/>
-<table class="centerBackgroundWhite">
-  <tbody>
-    <tr>
-      <td> 
-      <span class="largeRed">S</span> <span class="largeOrange">E</span>
-      <span class="largeYellow">Qu</span> <span class="largePink">-</span>
-      <span class="largeGreen">R</span> <span class="largeBlue">Am</span>
+
+<div id="header">
+      <span class="largeRed">S</span> 
+      <span class="largeOrange">E</span>
+      <span class="largeYellow">Qu</span> 
+      <span class="largePink">-</span>
+      <span class="largeGreen">R</span> 
+      <span class="largeBlue">Am</span>
       <span class="largeViolet">A</span> 
-      </td>
-    </tr>
-  </tbody>
-</table>
-<table class="centerBackgroundGrey">
-<tbody>
-<tr>
-<td>
+      <br/>
+      <span class="smallRed">S</span> 
+      <span class="smallBlack">earch</span> 
+      <span class="smallOrange">E</span> 
+      <span class="smallBlack">ngine </span> 
+      <span class="smallYellow">QU</span>
+      <span class="smallBlack">ery </span> 
+      <span class="smallPink"> —</span> 
+      <span class="smallGreen">R</span> 
+      <span class="smallBlack">esults </span> 
+      <span class="smallBlue">A</span> 
+      <span class="smallBlack">ccu</span> 
+      <span class="smallBlue">M</span> 
+      <span class="smallBlack">ulator </span> 
+      <span class="smallViolet">A</span>
+      <span class="smallBlack">ggregator</span>
+
 <form id="sequrama_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()"> 
-<div class="YesScript">
-<select name="timeout" size="1">
-  <option value="60">&nbsp;60-seconds</option>
-  <option value="30">&nbsp;30-seconds</option>
-  <option value="90">&nbsp;90-seconds</option>
-  <option value="120">120-seconds</option>
-  <option value="150">150-seconds</option>
-  <option value="180">180-seconds</option>
-</select>               
-<input autofocus="" id="input" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
-<input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">
-<input onclick="clearForm()" class="sequrama_clear_button" value="Clear" type="button">
-<script type="text/javascript">
-	var jabberwocky = 
-	[
-	  '`Twas brillig, and the slithy toves, Did gyre and gimble in the wabe!',
-	  'All mimsy were the borogoves, And the mome raths outgrabe.',
-	  'Beware the Jabberwock, my son!, The jaws that bite, the claws that catch!',
-	  'Beware the Jubjub bird, and shun, The frumious Bandersnatch!',
-	  'He took his vorpal sword in hand: Long time the manxome foe he sought --',
-	  'So rested he by the Tumtum tree, And stood awhile in thought.',
-	  'And, as in uffish thought he stood, The Jabberwock, with eyes of flame...',
-	  'Came whiffling through the tulgey wood, And burbled as it came!',
-	  'One,two! One,two! And through and through, The vorpal blade went snicker-snack!',
-	  'He left it dead, and with its head, He went galumphing back.',
-	  'And, has thou slain the Jabberwock? Come to my arms, my beamish boy!',
-	  'O frabjous day! Callooh! Callay! He chortled in his joy.'
-	];    
-	
-	Array.prototype.randomLine = function() 
-	{
-		return this[Math.floor(Math.random() * this.length)]
-	}
-						
-	var flag = true;
-	var text = document.querySelector("input");
-	
-	text.addEventListener("focus", 
-		function()
-		{
-			if(flag) 
-			{
-				text.value = jabberwocky.randomLine(); 
-				flag = false;
-			} 
-		}
-	);
-</script>
-</div>
-<noscript>            
-<select name="timeout" size="1">
-  <option value="60">&nbsp;60-seconds</option>
-  <option value="30">&nbsp;30-seconds</option>
-  <option value="90">&nbsp;90-seconds</option>
-  <option value="120">120-seconds</option>
-  <option value="120">150-seconds</option>
-  <option value="120">180-seconds</option>
-</select>               
-<input required="required" autofocus="" id="input_nojs" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
-<input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">
-<input class="sequrama_clear_button" value="Clear" type="reset">
-</noscript>
+	 <input autofocus="" id="input" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
+     <input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">
 </form>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="centerBackgroundWhite">
-<tbody>
-<tr>
-<td>
-<div class="footer">Copyright © 2017 William F. Gilreath. All Rights Reserved.</div>
-</td>
-</tr>
-</tbody>
-</table>
+
+</div>
+
+<div class="footer">
+<br/><br/><br/><br/><br/><br/>
+Copyright © 2017 William F. Gilreath. All Rights Reserved.
+</div>
+
 </body>
+
 </html>
