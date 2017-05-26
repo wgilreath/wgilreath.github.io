@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<script type="text/javascript">
+
+function checkForm()
+{
+    var x = document.forms["sequrama_search"]["params"].value;
+    if (x == null || x== "" )
+    {
+        //alert("SEQu-RAmA search requires keywords!");
+        return false;
+    }//end if
+}//end checkForm
+
+</script>
+
+<style type="text/css">
+
+#header 
+{
+text-align: center; 
+}
+
+#footer 
+{
+    text-align: center;
+}
+
+#sequrama_search
+{
+    padding:72px;
+}
+
+.sequrama_input
+{
+    align:center;
+    margin: 0;  
+    padding: 10px 20px;
+    font-family: Arial;
+    font-size:18px;
+    border:1px solid #0076a3; 
+    border-top-right-radius: 8px 8px;
+    border-top-left-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+}
+
+div.footer
+{
+    color: rgb(0,     0,   0); 
+    text-align: center; 
+    font-family: Courier New; 
+    font-size: 11pt;    
+}
+
+span.largeRed
+{
+    color: rgb(255,   0,   0); 
+    font-family: Arial;    
+    font-weight: bold; 
+    font-size: 73pt;
+}   
+
+span.largeOrange
+{
+    color: rgb(255,   140,   0); 
+    font-family: Garamond;    
+    font-weight: bold; 
+    font-size: 73pt;
+}   
+
+span.largeIndigo
+{
+    color: rgb(75,   0,   130); 
+    font-family: Georgia;    
+    font-weight: bold; 
+    font-size: 73pt;
+}   
+
+span.largePink
+{
+    color: rgb(255, 105, 180);  
+    font-family: Bookman;    
+    font-weight: bold; 
+    font-size: 73pt;
+}   
+
+span.largeGreen
+{
+    color: rgb(51,  204,   0);
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 73pt;
+}   
+
+span.largeBlue
+{
+    color: rgb(51,   51, 255); 
+    font-family: Impact;    
+    font-weight: bold; 
+    font-size: 73pt;
+}   
+
+span.largeViolet
+{
+    color: rgb(148, 0, 211); 
+    font-family: Comic Sans MS;   
+    font-weight: bold; 
+    font-size: 73pt;
+}   
+
+</style>
+
+<meta charset="UTF-8"/>
+<title>SEQu-RAmA: Search Engine QUery - Results AccuMulator Aggregator</title>
+
+</head>
+<body>
+
+<div id="header">
+      <span    class="largeRed">S</span> 
+      <span class="largeOrange">E</span>
+      <span class="largeIndigo">Qu</span> 
+      <span   class="largePink">-</span>
+      <span  class="largeGreen">R</span> 
+      <span   class="largeBlue">Am</span>
+      <span class="largeViolet">A</span>
+
+<form id="sequrama_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()"> 
+	 <input autofocus="" id="input" value="" class="sequrama_input" name="params" size="60" maxlength="80" type="text">
+     <input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true"/>
+</form>
+
+</div>
+
+<br/><br/><br/><br/><br/><br/>
+
+<div class="footer">
+Copyright © 2017 William F. Gilreath. All Rights Reserved.
+</div>
+
+</body>
+
+</html>
