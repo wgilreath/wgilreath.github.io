@@ -38,14 +38,14 @@ text-align: center;
 {
     align:center;
     margin: 0;  
-    padding: 5px 15px;
+    padding: 10px 20px;
     font-family: Arial;
-    font-size:16px;
+    font-size:18px;
     border:1px solid #0076a3; 
-    border-top-right-radius: 5px 5px;
-    border-top-left-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
+    border-top-right-radius: 8px 8px;
+    border-top-left-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
 }
 
 .sequrama_query_button
@@ -70,9 +70,10 @@ text-align: center;
 
 div.footer
 {
+    color: rgb(0,     0,   0); 
     text-align: center; 
     font-family: Courier New; 
-    font-size: 11pt;
+    font-size: 11pt;    
 }
 
 span.largeBlack
@@ -95,14 +96,6 @@ span.largeOrange
 {
     color: rgb(255,   140,   0); 
     font-family: Optima;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeYellow
-{
-    color: rgb(244,   252,   5); 
-    font-family: Zorque;    
     font-weight: bold; 
     font-size: 96pt;
 }   
@@ -147,86 +140,6 @@ span.largeViolet
     font-size: 96pt;
 }   
 
-span.smallBlack
-{
-     color: rgb(0,     0,   0); 
-     font-family: Courier New; 
-     font-weight: bold; 
-     font-size: 13pt; 
-}
-
-span.smallRed
-{
-    color: rgb(255,   0,   0); 
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallOrange
-{
-    color: rgb(255,   140,   0); 
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallYellow
-{
-    color: rgb(244,   252,   5); 
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallIndigo
-{
-    color: rgb(75,   0,   130); 
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallPink
-{
-    color: rgb(255, 153, 255);  
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallGreen
-{
-    color: rgb(51,  204,   0);
-    font-family: Courier New;   
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallBlue
-{
-    color: rgb(51,   51, 255); 
-    font-family: Courier New;   
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallViolet
-{
-    color: rgb(160, 20, 122); 
-    font-family: Courier New;   
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
-span.smallPink
-{
-    color: rgb(255, 105, 180);  
-    font-family: Courier New;   
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
 </style>
 
 <meta charset="UTF-8"/>
@@ -236,18 +149,16 @@ span.smallPink
 <body>
 
 <div id="header">
-      <span class="largeRed">S</span> 
+      <span    class="largeRed">S</span> 
       <span class="largeOrange">E</span>
       <span class="largeIndigo">Qu</span> 
-      <span class="largePink">-</span>
-      <span class="largeGreen">R</span> 
-      <span class="largeBlue">Am</span>
-      <span class="largeViolet">A</span> 
-      <br/>
+      <span   class="largePink">-</span>
+      <span  class="largeGreen">R</span> 
+      <span   class="largeBlue">Am</span>
+      <span class="largeViolet">A</span>
 
 <form id="sequrama_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()"> 
-	 <input autofocus="" id="input" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
-     <!--<input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">-->
+	 <input autofocus="" id="input" value="" class="sequrama_input" name="params" size="60" maxlength="80" type="text">
      <input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true"/>
 </form>
 
