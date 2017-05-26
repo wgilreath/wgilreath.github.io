@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<script type="text/javascript">
+
+function checkForm()
+{
+    var x = document.forms["sequrama_search"]["params"].value;
+    if (x == null || x== "" )
+    {
+        //alert("SEQu-RAmA search requires keywords!");
+        return false;
+    }//end if
+}//end checkForm
+
+</script>
+
+<style type="text/css">
+
+#header 
+{
+text-align: center; 
+width: 100%;
+}
+
+#footer 
+{
+width: 100%;
+text-align: center;
+}
+
+#sequrama_search
+{
+    padding:150px;
+}
+
+.sequrama_input
+{
+    align:center;
+    margin: 0;  
+    padding: 5px 15px;
+    font-family: Arial;
+    font-size:16px;
+    border:1px solid #0076a3; 
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+.sequrama_query_button
+{
+    align:right;
+    margin: 0;
+    padding: 5px 5px;
+    font-family: Verdana;
+    font-size:14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #ff0000; 
+
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+div.footer
+{
+    text-align: center; 
+    font-family: Courier New; 
+    font-size: 11pt;
+}
+
+span.largeBlack
+{
+    color: rgb(0,   0,   0); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largeRed
+{
+    color: rgb(255,   0,   0); 
+    font-family: Rockwell;    
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largeOrange
+{
+    color: rgb(255,   140,   0); 
+    font-family: Optima;    
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largeYellow
+{
+    color: rgb(244,   252,   5); 
+    font-family: Zorque;    
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largeIndigo
+{
+    color: rgb(75,   0,   130); 
+    font-family: Zorque;    
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largePink
+{
+    color: rgb(255, 105, 180);  
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largeGreen
+{
+    color: rgb(51,  204,   0);
+    font-family: Baskerville;   
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largeBlue
+{
+    color: rgb(51,   51, 255); 
+    font-family: Impact;    
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.largeViolet
+{
+    color: rgb(160, 20, 122); 
+    font-family: Verdana;   
+    font-weight: bold; 
+    font-size: 96pt;
+}   
+
+span.smallBlack
+{
+     color: rgb(0,     0,   0); 
+     font-family: Courier New; 
+     font-weight: bold; 
+     font-size: 13pt; 
+}
+
+span.smallRed
+{
+    color: rgb(255,   0,   0); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallOrange
+{
+    color: rgb(255,   140,   0); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallYellow
+{
+    color: rgb(244,   252,   5); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallIndigo
+{
+    color: rgb(75,   0,   130); 
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallPink
+{
+    color: rgb(255, 153, 255);  
+    font-family: Courier New;    
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallGreen
+{
+    color: rgb(51,  204,   0);
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallBlue
+{
+    color: rgb(51,   51, 255); 
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallViolet
+{
+    color: rgb(160, 20, 122); 
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+span.smallPink
+{
+    color: rgb(255, 105, 180);  
+    font-family: Courier New;   
+    font-weight: bold; 
+    font-size: 14pt;
+}   
+
+</style>
+
+<meta charset="UTF-8"/>
+<title>SEQu-RAmA: Search Engine QUery - Results AccuMulator Aggregator</title>
+
+</head>
+<body>
+
+<div id="header">
+      <span class="largeRed">S</span> 
+      <span class="largeIndigo">E</span>
+      <span class="largeYellow">Qu</span> 
+      <span class="largePink">-</span>
+      <span class="largeGreen">R</span> 
+      <span class="largeBlue">Am</span>
+      <span class="largeViolet">A</span> 
+      <br/>
+      <span class="smallRed">S</span> 
+      <span class="smallBlack">earch </span> 
+      <span class="smallOrange">E</span> 
+      <span class="smallBlack">ngine </span> 
+      <span class="smallIndigo">QU</span>
+      <span class="smallBlack">ery </span> 
+      <span class="smallPink"> — </span> 
+      <span class="smallGreen">R</span> 
+      <span class="smallBlack">esults </span> 
+      <span class="smallBlue">A</span> 
+      <span class="smallBlack">ccu</span> 
+      <span class="smallBlue">M</span> 
+      <span class="smallBlack">ulator </span> 
+      <span class="smallViolet">A</span>
+      <span class="smallBlack">ggregator</span>
+
+<form id="sequrama_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()"> 
+	 <input autofocus="" id="input" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
+     <!--<input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">-->
+     <input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true"/>
+</form>
+
+</div>
+
+<br/><br/><br/><br/><br/><br/>
+
+<div class="footer">
+Copyright © 2017 William F. Gilreath. All Rights Reserved.
+</div>
+
+</body>
+
+</html>
