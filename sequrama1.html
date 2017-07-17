@@ -29,6 +29,7 @@ width: 100%;
 text-align: center;
 }
 
+
 #sequrama_search
 {
     padding:150px;
@@ -68,12 +69,15 @@ text-align: center;
     border-bottom-left-radius: 5px 5px;
 }
 
+
+
 div.footer
 {
     text-align: center; 
     font-family: Courier New; 
     font-size: 11pt;
 }
+
 
 span.largeBlack
 {
@@ -102,14 +106,6 @@ span.largeOrange
 span.largeYellow
 {
     color: rgb(244,   252,   5); 
-    font-family: Zorque;    
-    font-weight: bold; 
-    font-size: 96pt;
-}   
-
-span.largeIndigo
-{
-    color: rgb(75,   0,   130); 
     font-family: Zorque;    
     font-weight: bold; 
     font-size: 96pt;
@@ -147,6 +143,7 @@ span.largeViolet
     font-size: 96pt;
 }   
 
+
 span.smallBlack
 {
      color: rgb(0,     0,   0); 
@@ -179,17 +176,9 @@ span.smallYellow
     font-size: 14pt;
 }   
 
-span.smallIndigo
-{
-    color: rgb(75,   0,   130); 
-    font-family: Courier New;    
-    font-weight: bold; 
-    font-size: 14pt;
-}   
-
 span.smallPink
 {
-    color: rgb(255, 153, 255);  
+    color: rgb(255, 105, 180);  
     font-family: Courier New;    
     font-weight: bold; 
     font-size: 14pt;
@@ -238,17 +227,17 @@ span.smallPink
 <div id="header">
       <span class="largeRed">S</span> 
       <span class="largeOrange">E</span>
-      <span class="largeIndigo">Qu</span> 
+      <span class="largeYellow">Qu</span> 
       <span class="largePink">-</span>
       <span class="largeGreen">R</span> 
       <span class="largeBlue">Am</span>
       <span class="largeViolet">A</span> 
       <br/>
       <span class="smallRed">S</span> 
-      <span class="smallBlack">earch </span> 
+      <span class="smallBlack">earch</span> 
       <span class="smallOrange">E</span> 
       <span class="smallBlack">ngine </span> 
-      <span class="smallIndigo">QU</span>
+      <span class="smallYellow">QU</span>
       <span class="smallBlack">ery </span> 
       <span class="smallPink"> — </span> 
       <span class="smallGreen">R</span> 
@@ -262,15 +251,13 @@ span.smallPink
 
 <form id="sequrama_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()"> 
 	 <input autofocus="" id="input" value="" class="sequrama_input" name="params" size="80" maxlength="80" type="text">
-     <!--<input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">-->
-     <input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true"/>
+     <input value="&nbsp;Go!&nbsp;" class="sequrama_query_button" type="submit">
 </form>
 
 </div>
 
-<br/><br/><br/><br/><br/><br/>
-
 <div class="footer">
+<br/><br/><br/><br/><br/><br/>
 Copyright © 2017 William F. Gilreath. All Rights Reserved.
 </div>
 

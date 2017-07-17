@@ -23,12 +23,7 @@ function checkForm()
 	text-align: center; 
 }
 
-#sequrama_search
-{
-    padding:72px;
-}
-
-.sequrama_input
+.ubergoog_input
 {
     align:center;
     margin: 0;  
@@ -95,6 +90,22 @@ span.bigViolet
     color: rgb(148, 0, 211); 
     font-family: Verdana;   
     font-weight: bold; 
+    font-size: 55pt;
+}   
+
+span.bigGrey
+{
+    color: grey; 
+    font-family: Verdana;   
+    font-weight: bold; 
+    font-size: 55pt;
+}   
+
+span.bigBlack
+{
+    color: rgb(0,     0,   0); 
+    font-family: Verdana;   
+    font-weight: bold; 
     font-size: 65pt;
 }   
 
@@ -107,27 +118,35 @@ div.footer
     font-size: 11pt;    
 }
 
+div.slogan
+{
+    color: rgb(0,     0,   0); 
+    text-align: center; 
+    font-family: Verdana; 
+    font-size: 10pt; 
+}
+
 </style> 
 
 	<meta charset="UTF-8" />
-	<title>SEQu-RAmA: Search Engine QUery - Results AccuMulator AgGreengator</title> 
+	<title>Über-Goog</title> 
 </head>
 <body>
 <div id="header">
-	<span    class="bigRed">S</span> 
-	<span class="bigOrange">E</span> 
-	<span class="bigIndigo">Qu</span> 
-	<span   class="bigPink">-</span> 
-	<span  class="bigGreen">R</span> 
-	<span   class="bigBlue">Am</span> 
-	<span class="bigViolet">A</span>
-	
-	<form id="sequrama_search" method="get" action="http://localhost:8080/Zaxxon/Zaxxon" onsubmit="return checkForm()">
-		<input required autofocus="" id="input" value="" class="sequrama_input" name="query" size="60" maxlength="80" type="text"> <input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true" /> 
+	<span    class="bigRed">Ü</span> 
+	<span class="bigOrange">b</span> 
+	<span class="bigIndigo">e</span> 
+	<span   class="bigPink">r</span> 
+	<span  class="bigBlack">-</span>
+	<span  class="bigGreen">G</span> 
+	<span   class="bigBlue">o</span>
+	<span   class="bigGrey">o</span>
+	<span class="bigViolet">g</span>
+	<div class="slogan">Over Search Easy ™</div><br/>
+	<form id="ubergoog_search" method="post" action="http://localhost:8080/" onsubmit="return checkForm()">
+		<input required autofocus="" id="input" value="" class="ubergoog_input" name="params" size="60" maxlength="80" type="text"> <input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true" /> 
 	</form>
 </div>
-<div class="footer">
-	Copyright © 2017 William F. Gilreath. All Rights Reserved. 
-</div>
+<div class="footer">Copyright © 2017 William F. Gilreath. All Rights Reserved.</div>
 </body>
 </html>
