@@ -1,32 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  
+<head>  
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <title>New Life Fellowship Course Evaluation</title>
-
-<script>
-function printPage() 
-{
-    window.print();
-    alert("Please printed document upside down in Scott's Inbox on his desk. Thank-you!");
-}
-
-document.getElementById("date").value = new Date();
-
-</script>
-  
 </head>
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-
 <div style="text-align: center; font-weight: bold; font-family: Arial;">
-<big><big>NLF Course Evaluation</big></big>
+<img style="width: 180px; height: 90px;" alt="" src="file:///Users/williamgilreath/Desktop/UGM%20Docs/UGM-Logo-2016%20180x90px.png">
+<br/><big><big>Course Evaluation</big></big>
 </div>
 <br>
 <table align="center" border="0">
 <tr><td>
 <div style="text-align: center;">
-<form method="post" action="localhost:8080" name="course_information"><span style="font-family: Verdana;">Teacher:&nbsp;</span>
+<form method="POST" action="http://formspree.io/wfgilreath@yahoo.com">
+<!--<input type="email" name="email" placeholder="wfgilreath@yahoo.com">-->
+<span style="font-family: Verdana;">Teacher:&nbsp;</span>
 <input size="20" name="teacher">&nbsp;&nbsp;&nbsp;&nbsp;
 <span style="font-family: Verdana;"> Class:</span> 
 <input size="20" name="class">&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -37,14 +26,12 @@ document.getElementById("date").value = new Date().toString().substring(4,16);
 </script>
 
 <br>
-</form>
 </div>
 <br>
 </td></tr>
 
 <tr><td>
-
-<form method="post" action="localhost:8080" name="course_content"><span style="text-decoration: underline;">
+<span style="text-decoration: underline;">
 Content:</span><br>
 
   <br>
@@ -52,7 +39,7 @@ Content:</span><br>
 How personally useful was the material presented in the course you just
 completed?
   
-  <select name="content">
+  <select name="course">
 
   <option>0 - Not At All</option>
   <option>1 - Very Little</option>
@@ -71,18 +58,17 @@ Please comment on the course material:<br>
 
   <br>
 
-  <textarea cols="78" rows="8" name="content_comment"></textarea><br>
+  <textarea cols="78" rows="8" name="course_comment"></textarea><br>
 
   <br>
-</form>
 </td></tr>
 <tr><td>
 
-<form method="post" action="localhost:8080" name="course_instruction"><span style="text-decoration: underline;">Instruction:</span><br>
+<span style="text-decoration: underline;">Instruction:</span><br>
 
   <br>
 In general, how effective was your teacher in the course you just completed?&nbsp;
-  <select name="content">
+  <select name="teacher">
 
   <option>0 - Not At All</option>
   <option>1 - Very Little</option>
@@ -102,21 +88,21 @@ Please offer comments on the instructor:<br>
 
   <br>
 
-  <textarea cols="78" rows="8" name="content_comment"></textarea><br>
+  <textarea cols="78" rows="8" name="teacher_comment"></textarea><br>
   <br>
 
   
-</form>
 </td></tr>
 <br>
 <tr><td>
-<form method="post" action="localhost:8080" name="course_overall"><span style="text-decoration: underline;">Overall:</span><br>
+
+<span style="text-decoration: underline;">Overall:</span><br>
 
 
   <br>
 
 How satisfied are you with your experience in the course just completed?&nbsp;
-  <select name="content">
+  <select name="experience">
 
 
   <option>0 - Not At All</option>
@@ -142,21 +128,19 @@ Please offer additional comments:<br>
   <br>
 
 
-  <textarea cols="78" rows="8" name="content_comment"></textarea><br>
+  <textarea cols="78" rows="8" name="experience_comment"></textarea><br>
 
 
-</form>
 <br>
 </td></tr>
 <tr><td>
 <div style="text-align: center;">
 <hr>
-
-<p>Click the button to print the current page.</p>
-
-<button onclick="printPage()">Print This Page</button>
-<br>
+<p>Click the button to mail the course evaluation.</p>
+<button type="submit">Submit Course Evaluation</button>
 </div>
+</form>
 <br>
 </td></tr>
-</body></html>
+</body>
+</html>
