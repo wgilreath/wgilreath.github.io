@@ -14,7 +14,7 @@ echo "\nCreating index of directory for wgilreath.github.io.\n"
 
 #create html index
 java -jar MkIndex.jar
-mv index-byname.html html
+mv index-byname.html index.html
 
 echo "\nUpdating wgilreath.github.io with files.\n"
 	
