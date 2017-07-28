@@ -1,5 +1,8 @@
 #!/bin/sh
-# 
+#
+# gitit.sh (Get it?)
+# July 27, 2017
+# Create index.html from files and update wgilreath.github.io auto-magically.
 #
 if [ -z "$1" ]
 then
@@ -7,18 +10,18 @@ then
     exit 
 fi
 
+echo "\nCreating index of directory for wgilreath.github.io.\n"
+
 #create html index
-echo "\nCreating index of directory for github.io\n"
-	
 java -jar MkIndex.jar
 mv index-byname.html html
 
-echo "\nUpdating github.io with files\n"
+echo "\nUpdating wgilreath.github.io with files.\n"
 	
-#update github.io with directory
+#update wgilreath.github.io with directory
 git add --all
 git commit -m $1
 git push -u origin master
 
 echo "\nAll done!\n"
-	
+exit
