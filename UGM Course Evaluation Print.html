@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Course Evaluation</title>
+  
+  
+<style type="text/css">
+@media print {
+    #printpagebutton {
+        display :  none;
+    }
+	
+body {
+      color: #000;
+      background: #fff;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+	  zoom: 100%;
+   }
+
+   @page {
+      margin: 1cm;
+   }	
+}
+</style>
+
+<script type="text/javascript">
+    function printPage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+        //Set the print button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Print the page content
+        window.print()
+        //Set the print button to 'visible' again 
+        //[Delete this line if you want it to stay hidden after printing]
+        printButton.style.visibility = 'visible';
+		//last reminder to put document in Scott's inbox on his desk
+        alert("Please put your evaluation upside down in Scott's Inbox on his desk. Thank-you!");
+    }
+</script></head><body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+<div style="text-align: center; font-weight: bold; font-family: Arial;">
+<div style="text-align: center;">
+<big><img style="width: 180px; height: 90px;" alt="" src="../UGM-Logo-2016%20180x90px.png"><big><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Course Evaluation</big></big></big></big></div>
+
+</div>
+<br>
+<table align="center" border="0">
+<tbody><tr><td>
+<fieldset>
+<legend><span style="font-family: Verdana;">About</span> </legend>
+<div style="text-align: center;">
+<form method="post" action="localhost:8080" name="course_information">
+<span style="font-family: Times;">Teacher:&nbsp;</span>
+ <input size="20" name="teacher">&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span style="font-family: Times;"> Class:</span> 
+<input size="20" name="class">&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<span style="font-family: Times;">Date: </span>
+<input id="date" name="date" size="20">
+<script type="text/javascript">
+document.getElementById("date").value = new Date().toString().substring(4,16); 
+</script>
+<br>
+</form>
+</div></fieldset>
+
+
+</td></tr>
+
+<tr><td>
+<fieldset>
+<legend><span style="font-family: Verdana;">Content</span> </legend>
+
+<form method="post" action="localhost:8080" name="course_content"><span style="text-decoration: underline;"></span><br>
+
+  <br>
+
+How personally useful was the <b><u>material</u></b> presented in the course you just
+completed?
+  
+  <select name="content">
+
+  <option>0 - Not At All</option>
+  <option>1 - Very Little</option>
+  <option>2 - Possibly</option>
+  <option>3 - Somewhat</option>
+  <option>4 - Very</option>
+  <option>5 - Extremely</option>
+  
+  </select>
+
+  <br>
+
+  <br>
+
+Please comment on the course material:<br>
+
+  <br>
+
+  <textarea cols="110" rows="8" name="content_comment"></textarea><br>
+
+  <br>
+</form>
+</fieldset>
+</td></tr>
+<tr><td>
+
+<fieldset>
+<legend><span style="font-family: Verdana;">Instruction</span> </legend>
+
+<form method="post" action="localhost:8080" name="course_instruction"><span style="text-decoration: underline;"></span><br>
+
+  <br>
+In general, how effective was your <b><u>teacher</u></b> in the course you just completed?&nbsp;
+  <select name="content">
+
+  <option>0 - Not At All</option>
+  <option>1 - Very Little</option>
+  <option>2 - Possibly</option>
+  <option>3 - Somewhat</option>
+  <option>4 - Very</option>
+  <option>5 - Extremely</option>
+  
+  </select>
+
+  &nbsp;
+  <br>
+
+  <br>
+
+Please offer comments on the instructor:<br>
+
+  <br>
+
+  <textarea cols="110" rows="8" name="content_comment"></textarea><br>
+  <br>
+
+  
+</form>
+</fieldset>
+</td></tr>
+<tr><td>
+<fieldset>
+<legend><span style="font-family: Verdana;">Overall</span> </legend>
+
+<form method="post" action="localhost:8080" name="course_overall"><span style="text-decoration: underline;"></span><br>
+
+
+  <br>
+
+How satisfied are you with your <b><u>experience</u></b> in the course just completed?&nbsp;
+  <select name="content">
+
+
+  <option>0 - Not At All</option>
+  <option>1 - Very Little</option>
+  <option>2 - Possibly</option>
+  <option>3 - Somewhat</option>
+  <option>4 - Very</option>
+  <option>5 - Extremely</option>
+  
+  </select>
+
+
+  &nbsp;
+  <br>
+
+
+  <br>
+
+
+Please offer additional comments:<br>
+
+
+  <br>
+
+
+  <textarea cols="110" rows="8" name="content_comment"></textarea><br>
+
+
+</form>
+</fieldset>
+
+</td></tr>
+<tr><td>
+<div style="text-align: center;">
+
+<input id="printpagebutton" value="Print this page" onclick="printPage()" type="button">
+
+<br>
+</div>
+<br>
+</td></tr>
+</tbody></table></body></html>
