@@ -59,14 +59,14 @@ body {
 			</small>
 			<br>
 			<div style="text-align: left;">
-					<div style="text-align: center;">
 					<small><span style="font-family: Times;">Name of Supervisor: &nbsp;</span> 
 					<input size="40" name="supervisor">&nbsp;&nbsp;&nbsp;&nbsp; 
+<!--
 					<span style="font-family: Times;">Supervisor Signature:&nbsp;
 					<span style="text-decoration: underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-						<br>
+-->
+                    <br>
 					</small>
-				</div>
 			</div>
 					</div>
 	
@@ -399,15 +399,27 @@ body {
 <small> </small> 
 </table>
 <small> 
-<br>
+<br/>
 </small> 
-<div style="text-align: center;">
+</fieldset>
+
+<!--
 	<span style="font-family: Times;"></span><small>Client Signature:</small>&nbsp;</span> 
     <span style="text-decoration: underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 	<span style="font-family: Times;"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+-->
+	<fieldset>
+		<legend align="left" style="font-weight: bold;">
+			<small><span style="font-family: Verdana;">Confirmation</span></small>
+		</legend>
+<div style="text-align: center;">
 
-	<span style="font-family: Times;"></span><small>Date:</small>&nbsp;</span> 
-    <span style="text-decoration: underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style="font-family: Helvetica,Arial,sans-serif;">
+<p>Client has read and understood work therapy evaluation:
+<input type="radio" name="confirm_yes_no">Yes</input>
+<input type="radio" name="confirm_yes_no" checked>No</input>
+</p>
+</span>
 </div>
 </fieldset>
 </td>
@@ -416,7 +428,7 @@ body {
 	<td>
 		<div style="text-align: center;">
 			<p>
-				Click the button submit the work therapy evaluation by e-mail.
+				Click the button to submit the work therapy evaluation by e-mail.
 			</p>
 			<button type="submit">
 				Submit Work Therapy Evaluation
