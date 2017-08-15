@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+<script type="text/javascript">
+
+function checkForm()
+{
+    var x = document.forms["sequrama_search"]["params"].value;
+    if (x == null || x== "" )
+    {
+        return false;
+    }//end if
+    return true;
+}//end checkForm
+
+</script> 
+
 <style type="text/css">
 
 #header 
@@ -93,12 +107,12 @@ div.footer
     font-size: 11pt;    
 }
 </style> 
-<meta charset="UTF-8"/>
-<title>SEQu-RAmA: Search Engine QUery - Results AccuMulator Aggregator</title> 
+	<meta charset="UTF-8" />
+	<title>SEQu-RAmA the Search Engine QUery - Results AccuMulator Aggregator!</title> 
 </head>
 <body>
 <div id="header">
-	<span    class="bigRed">S</span> 
+   	<span    class="bigRed">S</span> 
 	<span class="bigOrange">E</span> 
 	<span class="bigIndigo">Qu</span> 
 	<span   class="bigPink">-</span> 
@@ -106,10 +120,10 @@ div.footer
 	<span   class="bigBlue">Am</span> 
 	<span class="bigViolet">A</span>
 	
-	<form id="sequrama_search" method="get" action="http://localhost:8080/Zaxxon/Zaxxon">
+	<form id="sequrama_search" method="post" action="http://localhost:8080/Zaxxon/Zaxxon">
 		<input required autofocus="" id="input" value="" class="sequrama_input" name="query" size="60" maxlength="1024" type="text"> 
 		<input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true" /> 
-     	<input type="hidden" name="timeout" value="30" />
+     	<input type="hidden" name="timeout" value="60" />
 	</form>
 </div>
 <div class="footer">Copyright &copy; 2017 William F. Gilreath. All Rights Reserved.</div>
