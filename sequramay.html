@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+
+<!-- 
+<link rel="icon" href="https://wgilreath.github.io/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://wgilreath.github.io/favicon.ico" type="image/x-icon"> 
+ -->
+
 <script type="text/javascript">
 
 /*! jQuery v1.12.0 | (c) jQuery Foundation | jquery.org/license */
@@ -132,11 +138,12 @@ div.footer
     font-size: 11pt;    
 }
 </style> 
+
 <meta charset="UTF-8"/>
-<title>SEQu-RAmA: Search Engine QUery - Results AccuMulator Aggregator</title> 
+<title>SEQu-RAmA</title> 
 </head>
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-<div id="header">
+<div title="SEQu-RAmA: Search Engine QUery - Results AccuMulator Aggregator" id="header">
 	<span    class="bigRed">S</span> 
 	<span class="bigOrange">E</span> 
 	<span class="bigIndigo">Qu</span> 
@@ -146,23 +153,16 @@ div.footer
 	<span class="bigViolet">A</span>
 	
 	<form id="sequrama_search" method="post" action="http://wilgil.heliohost.org/Zaxxon/Zaxxon">
-		<input title="Enter search query..." required autofocus="" id="input" value="" class="sequrama_input" name="query" size="60" maxlength="1024" type="text"> 
-		<input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true" /> 
-     	<!--<input type="hidden" name="default" value="15" />-->
-     	     	
+		<input title="Enter search keywords..." required autofocus="" id="input" value="" class="sequrama_input" name="query" size="60" maxlength="1024" type="text"> 
+		<input type="submit" style="width:0px; height:0px; opacity:0; display:none border:0; padding:0; font-size:0" hidden="true" />      	     	
      	<br/>
-     	<br/>
-				
-		<div title="Configure time for search in seconds." id="advSearch-wrapper" style="float:center;">
+     	<br/>				
+		<div title="Set time for search in seconds" id="advSearch-wrapper" style="float:center;">
 			<div>
 				<span id="advSearch-control" style="border-bottom: 1px dashed; color: grey;font-family: Arial; font-size: 12px;cursor:pointer;">Configure Search</span> 
 			</div>
-			<div style="display:none;" id="advSearch">
-			    <!-- checkbox redundant, always have default timeout = 15 even when not enabled ??-->
-				<!-- <input style="position: relative;top:1px;" type="checkbox" name="enable"> -->
-				<!--<label><font face="Verdana" size="2" color="#000000">Search For:</font></label>--> 
-										
-				<select title="Set search time in seconds. Default is 15-seconds." name="timeout"> 
+			<div style="display:none;" id="advSearch">										
+				<select title="Set search time; the default is 15-seconds." name="timeout"> 
 					<option value="15" selected="true">
 						Search Time 
 					</option>
@@ -190,9 +190,8 @@ div.footer
 				</select> 
 			</div>
 		</div>
-
 	</form>
 </div>
-<div class="footer">Copyright &copy; 2017 William F. Gilreath. All Rights Reserved.</div>
+<div title="The web scraper super-search engine is Will's crazy idea!" class="footer">Copyright &copy; 2017 William F. Gilreath. All Rights Reserved.</div>
 </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>SEQu-RAmA Searching...</title><script type="text/javascript">
+  
+var count = 15;
+var redir = "http://wgilreath.github.io/sequramax.html";
+function counter(){
+  var timer = document.getElementById("timer");
+  if(count == 0)
+  {
+    timer.innerHTML = "Done!";
+    window.location.href = redir;
+  }else{
+    count--;
+    timer.innerHTML = ""+(count+1)+" seconds";
+    setTimeout("counter()", 1000);
+  }
+}
+
+function blink() {
+  var blinks = document.getElementsByTagName('blink');
+  for (var i = blinks.length - 1; i >= 0; i--) {
+    var s = blinks[i];
+    s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+  }
+  window.setTimeout(blink, 1000);
+}
+
+if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
+else if (window.addEventListener) window.addEventListener("load", blink, false);
+else if (window.attachEvent) window.attachEvent("onload", blink);
+else window.onload = blink;
+
+</script><style type="text/css">
+
+.sequrama_input{    margin: 0;    padding: 3px 11px;    font-family: Arial;    font-size:16px;    border:1px solid #0076a3;    border-top-right-radius: 4px 4px;    border-top-left-radius: 4px 4px;    border-bottom-right-radius: 4px 4px;    border-bottom-left-radius: 4px 4px;}span.indexNumber{    color: rgb(0, 0, 0);     font-family: Courier New;    font-size: 12pt;}   span.result{    color: rgb(0, 0, 0);     font-family: Verdana;       font-weight: bold;     font-size: 10pt;}   span.results{    color: rgb(0, 0, 0);     font-family: Courier New;     font-size: 12pt;}   span.largeBlack{    color: rgb(0,   0,   0);     font-family: Courier New;     font-weight: bold;     font-size: 72pt;}   span.largeRed{    color: rgb(255,   0,   0);     font-family: Arial;        font-weight: bold;     font-size: 73pt;}   span.largeOrange{    color: rgb(255,   140,   0);     font-family: Garamond;        font-weight: bold;     font-size: 73pt;}   span.largeIndigo{    color: rgb(75,   0,   130);     font-family: Georgia;        font-weight: bold;     font-size: 73pt;}   span.largePink{    color: rgb(255, 105, 180);      font-family: Bookman;      font-weight: bold;     font-size: 73pt;}   span.largeGreen{    color: rgb(51,  204,   0);    font-family: Courier New;       font-weight: bold;     font-size: 73pt;}span.largeBlue{    color: rgb(51,   51, 255);     font-family: Impact;    font-weight: bold;     font-size: 73pt;}   span.largeViolet{    color: rgb(148, 0, 211);     font-family: Comic Sans MS;    font-weight: bold;     font-size: 73pt;}</style></head><body><br /><br /><br /><br /></br></br><table align="center" bgcolor="#dddddd" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td bgcolor="#ffffff"><table align="center"><tbody><tr><td><a href="http://wgilreath.github.io/sequrama.html" style="text-decoration: none;"> <span class="largeRed">S</span> <span class="largeOrange">E</span> <span class="largeIndigo">Qu</span> <span class="largePink">-</span> <span class="largeGreen">R</span> <span class="largeBlue">Am</span> <span class="largeViolet">A</span></a></td></tr></tbody></table><br /><br /><div align="center"><table border="0" cellpadding="0" cellspacing="0" width="650"><tbody><tr><td width="100%" height="30"><div align="center"><font color="#666666" size="11" face="Arial"><blink><b>Searching...</b></blink></font><br /><br /><br /><br /><br /><br /><font color="#666666" size="4" face="Arial"><span id="timer"><script type="text/javascript">counter();</script></span></font></div></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="650"><tbody><tr><td width="100%" height="30"><div align="center"></div></td></tr></tbody></table></div></body></html>
