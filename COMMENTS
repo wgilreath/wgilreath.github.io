@@ -1,0 +1,99 @@
+COMMENTS
+
+This coding problem implemented on both Windows 10 using Eclipse IDE, and on MacOS X with SubLime editor, Terminal console window with Java release 1.8.
+
+--------------------------------------------------------------------------------
+Directory organization:
+
+AdHocCodeTest 			-- main directory
+adhoc 		  			-- binary directory
+
+CodeTest.java 			-- main class source code
+SortedArrayList.java 	-- data structure class source code
+
+plans.csv				-- data file
+slcsp.csv				-- input/output data file
+zips.csv				-- data file
+
+--------------------------------------------------------------------------------
+Compile java:
+
+[AdHocCodeTest]$javac -d adhoc SortedArrayList.java 
+
+[AdHocCodeTest]$javac -classpath adhoc -d adhoc CodeTest.java
+
+--------------------------------------------------------------------------------
+Execute java:
+
+[AdHocCodeTest]$java -cp .:adhoc com.adhoc.CodeTest
+
+--------------------------------------------------------------------------------
+Output:
+
+[AdHocCodeTest]$cat output.txt
+Initialize data from CSV files.
+
+Import CSV File: zips.csv has 51541 lines 5 fields.
+Import CSV File: plans.csv has 22239 lines 5 fields.
+Import CSV File: slcsp.csv has 51 lines 2 fields.
+
+Start Processing data...
+
+    Problem! Zipcode rate area is ambigious. zipcode: 64148 
+    Problem! Zipcode rate area is ambigious. zipcode: 67118 
+    Problem! Zipcode/state has no plans. zipcode: 40813 state: KY 
+    Problem! Zipcode rate area is ambigious. zipcode: 18229 
+    Problem! Zipcode rate area is ambigious. zipcode: 51012 
+    Problem! Zipcode rate area is ambigious. zipcode: 79168 
+    Problem! Zipcode rate area is ambigious. zipcode: 54923 
+    Problem! Zipcode rate area is ambigious. zipcode: 67651 
+    Problem! Zipcode rate area is ambigious. zipcode: 49448 
+    Problem! Zipcode rate area is ambigious. zipcode: 27702 
+    Problem! Zipcode rate area is ambigious. zipcode: 47387 
+    Problem! Zipcode rate area is ambigious. zipcode: 50014 
+    Problem! Zipcode rate area is ambigious. zipcode: 33608 
+    Problem! Zipcode/state has no plans. zipcode: 06239 state: CT 
+    Problem! Zipcode rate area is ambigious. zipcode: 54919 
+    Problem! Zipcode rate area is ambigious. zipcode: 46706 
+    Problem! Zipcode/state has no plans. zipcode: 14846 state: NY 
+    Problem! Zipcode rate area is ambigious. zipcode: 48872 
+    Problem! Zipcode rate area is ambigious. zipcode: 43343 
+    Problem! Zipcode rate area is ambigious. zipcode: 77052 
+    Problem! Zipcode/state has no plans. zipcode: 07734 state: NJ 
+    Problem! Zipcode/state has no plans. zipcode: 95327 state: CA 
+    Problem! Zipcode/state has no plans. zipcode: 12961 state: NY 
+    Problem! Zipcode rate area is ambigious. zipcode: 26716 
+    Problem! Zipcode rate area is ambigious. zipcode: 48435 
+    Problem! Zipcode rate area is ambigious. zipcode: 53181 
+    Problem! Zipcode rate area is ambigious. zipcode: 52654 
+    Problem! Zipcode rate area is ambigious. zipcode: 58703 
+    Problem! Zipcode/state has no plans. zipcode: 91945 state: CA 
+    Problem! Zipcode rate area is ambigious. zipcode: 52146 
+    Problem! Zipcode/state has no plans. zipcode: 56097 state: MN 
+    Problem! Zipcode/state has no plans. zipcode: 21777 state: MD 
+    Problem! Zipcode/state has no plans. zipcode: 42330 state: KY 
+    Problem! Zipcode rate area is ambigious. zipcode: 38849 
+    Problem! Zipcode rate area is ambigious. zipcode: 77586 
+    Problem! Zipcode rate area is ambigious. zipcode: 39745 
+    Success! Zipcode:03299 Rate:240.45 
+    Problem! Zipcode rate area is ambigious. zipcode: 63359 
+    Problem! Zipcode rate area is ambigious. zipcode: 60094 
+    Problem! Zipcode rate area is ambigious. zipcode: 15935 
+    Problem! Zipcode rate area is ambigious. zipcode: 39845 
+    Problem! Zipcode rate area is ambigious. zipcode: 48418 
+    Problem! Zipcode rate area is ambigious. zipcode: 28411 
+    Problem! Zipcode rate area is ambigious. zipcode: 37333 
+    Problem! Zipcode rate area is ambigious. zipcode: 75939 
+    Problem! Zipcode/state has no plans. zipcode: 07184 state: NJ 
+    Problem! Zipcode rate area is ambigious. zipcode: 86313 
+    Problem! Zipcode rate area is ambigious. zipcode: 61232 
+    Problem! Zipcode/state has no plans. zipcode: 20047 state: DC 
+    Problem! Zipcode rate area is ambigious. zipcode: 47452 
+    Problem! Zipcode rate area is ambigious. zipcode: 31551 
+
+Close Processing data...
+
+Exporting results to slcps.csv
+Export CSV File: slcsp.csv has 51 lines 2 fields.
+
+
