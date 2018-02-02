@@ -23,13 +23,11 @@ n.cssHooks[b]=Ua(l.pixelPosition,
 function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(a).position()[b]+"px":c):void 0})}),n.each({Height:"height",Width:"width"},function(a,b){n.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){var f=arguments.length&&(c||"boolean"!=typeof d),g=c||(d===!0||e===!0?"margin":"border");return Y(this,function(b,c,d){var e;return n.isWindow(b)?b.document.documentElement["client"+a]:9===b.nodeType?(e=b.documentElement,Math.max(b.body["scroll"+a],e["scroll"+a],b.body["offset"+a],e["offset"+a],e["client"+a])):void 0===d?n.css(b,c,g):n.style(b,c,d,g)},b,f?d:void 0,f,null)}})}),n.fn.extend({bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}}),n.fn.size=function(){return this.length},n.fn.andSelf=n.fn.addBack,"function"==typeof define&&define.amd&&define("jquery",[],function(){return n});var mc=a.jQuery,nc=a.$;return n.noConflict=function(b){return a.$===n&&(a.$=nc),b&&a.jQuery===n&&(a.jQuery=mc),n},b||(a.jQuery=a.$=n),n});
 
 $(function() {
-
     $('#advSearch-control').click(function(){
         $('#advSearch').show();
         $(this).hide();
         return false;
     });
-
 });
 
 </script>
@@ -133,6 +131,12 @@ div.footer
     font-size: 8pt;    
 }
 
+a 
+{
+    text-decoration:none;
+    cursor:pointer;  
+}
+
 </style> 
 
 <meta charset="UTF-8"/>
@@ -155,27 +159,30 @@ div.footer
      	<br/>				
 		<div title="Set time for search in seconds" id="advSearch-wrapper" style="float:center;">
 			<div>
-				<span id="advSearch-control" style="border-bottom: 1px dashed; color: grey;font-family: Arial; font-size: 12px;cursor:pointer;">Configure Search</span> 
+				<span id="advSearch-control" style="border-bottom: 1px dashed; color: grey;font-family: Arial; font-size: 11px;cursor:pointer;">Configure Search</span> 
 			</div>
 			<div style="display:none;" id="advSearch">										
-				<select title="Set search time; default is 15-seconds" name="timeout"> 
-					<option value="15" selected="true">
+				<select title="Set search time; default is 10-seconds" name="timeout"> 
+					<option value="10" selected="true">
 						Search Time 
 					</option>
+					<option value="15">
+						&nbsp;15-seconds 
+					</option>
 					<option value="30">
-						30-seconds 
+						&nbsp;30-seconds 
 					</option>
 					<option value="45">
-						45-seconds 
+						&nbsp;45-seconds 
 					</option>
 					<option value="60">
-						60-seconds 
+						&nbsp;60-seconds 
 					</option>
 					<option value="75">
-						75-seconds 
+						&nbsp;75-seconds 
 					</option>
 					<option value="90">
-						90-seconds 
+						&nbsp;90-seconds 
 					</option>	
 					<option value="105">
 						105-seconds 
@@ -190,16 +197,8 @@ div.footer
 </div>
 <div title="The web scraper super-search engine is Will's crazy idea!" class="footer">Copyright &copy; 2018 William F. Gilreath. All Rights Reserved.</div>
 <br/>
-<center>
 <br/>
-<!-- Start Bravenet.com Service Code -->
-<script type="text/javascript" src="http://pub33.bravenet.com/counter/code.php?id=409569&usernum=2776678262&cpv=3"></script>
-<!-- End Bravenet.com Service Code -->
-</center>
-<br/><br/><br/><br/>
-<a href="http://counter33.bravenet.com/v2/?id=409569&type=overview&usernum=2776678262" target="_blank">.</a>
-<br/>
-<a title="Real Time Analytics" href="http://clicky.com/101098072" target="_blank">.</a>
+<a title="" href="http://clicky.com/101098072" target="_blank">.</a>
 <script src="//static.getclicky.com/js" type="text/javascript"></script>
 <script type="text/javascript">try{ clicky.init(101098072); }catch(e){}</script>
 </body>
