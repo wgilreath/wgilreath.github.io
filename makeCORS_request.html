@@ -1,0 +1,74 @@
+/*
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro
+VM281:46 Mixed Content: The page at 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro' was loaded over HTTPS, 
+but requested an insecure XMLHttpRequest endpoint 'http://html5rocks-cors.s3-website-us-east-1.amazonaws.com/index.html'. 
+This request has been blocked; the content must be served over HTTPS.
+makeCorsRequest @ VM281:46
+
+(index):129 Mixed Content: The page at 'https://jsfiddle.net/' was loaded over HTTPS, but requested an 
+insecure XMLHttpRequest endpoint 'http://html5rocks-cors.s3-website-us-east-1.amazonaws.com/index.html'. 
+This request has been blocked; the content must be served over HTTPS.
+makeCorsRequest @ (index):129
+
+*/
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+// Create the XHR object.
+function createCORSRequest(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    // XHR for Chrome/Firefox/Opera/Safari.
+    xhr.open(method, url, true);
+  } else if (typeof XDomainRequest != "undefined") {
+    // XDomainRequest for IE.
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+  } else {
+    // CORS not supported.
+    xhr = null;
+  }
+  return xhr;
+}
+
+// Helper method to parse the title tag from the response.
+function getTitle(text) {
+  return text.match('<title>(.*)?</title>')[1];
+}
+
+// Make the actual CORS request.
+function makeCorsRequest() {
+  // This is a sample server that supports CORS.
+  var url = 'http://html5rocks-cors.s3-website-us-east-1.amazonaws.com/index.html';
+
+  var xhr = createCORSRequest('GET', url);
+  if (!xhr) {
+    alert('CORS not supported');
+    return;
+  }
+
+  // Response handlers.
+  xhr.onload = function() {
+    var text = xhr.responseText;
+    var title = getTitle(text);
+    alert('Response from CORS request to ' + url + ': ' + title);
+  };
+
+  xhr.onerror = function() {
+    alert('Woops, there was an error making the request.');
+  };
+
+  xhr.send();
+}
+</script>
+
+
+<p align="center" style="font-size: 20px;">
+<a href="#" onclick="makeCorsRequest(); return false;">Run Sample</a>
+</p>
+
+</body>
+</html>
