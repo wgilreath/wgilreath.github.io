@@ -164,7 +164,16 @@
          font-size: 16px;
          color: #999;
          }
-            
+
+         x3 {
+         color: #00A0EB;
+         font-size: 24px;
+         font-weight: normal;
+         margin-bottom: 10px;
+         letter-spacing: -1px;
+         font-family: 'Exo 2', Arial, sans-serif;
+         }
+          
          x6 {
          color: #00A0EB;
          font-size: 16px;
@@ -173,6 +182,9 @@
          letter-spacing: -1px;
          font-family: 'Exo 2', Arial, sans-serif;
          }          
+          
+         p.footer { text-align: center }
+  
           
          ul, ol {
          margin: 0 0 35px 35px;
@@ -242,8 +254,6 @@
          padding: 0;
          }
          nav ul li a {
-         xcolor: #6f6f6f;
-         xcolor: yellow;
          color: #fd6;
          display: block;
          font-family: 'Exo 2',Arial,sans-serif;
@@ -256,9 +266,6 @@
          }
          nav ul li.selected a,
          nav ul li.selected a:hover {
-         xcolor: #fff;
-         xcolor: #fd6;
-         xcolor: grey;
          color: #444;
          font-weight:bold;
          }
@@ -362,7 +369,6 @@
          padding: 0;
          }
          footer p a {
-         xcolor: #ccc;
          color: red;
          font-weight: bold;
          }
@@ -407,7 +413,6 @@
          text-align: center;
          }
          footer .footer-bottom p, footer .footer-bottom p a {
-         xcolor: #666;
          color: white;
          font-family: Verdana;
          }
@@ -429,10 +434,10 @@
                <li><a href="#About">About</a></li>
                <li><a href="#Blog">Blog</a></li>
                <li><a href="#Books">Books</a></li>
-               <li><a href="#Research Papers">Research Papers</a></li>
-               <li><a href="#Source Code">Source Code</a></li>
-               <li><a href="#Technical Writings">Technical Writings</a></li>
-               <li><a href="#Web Apps">Web Apps</a></li>
+               <li><a href="#Research_Papers">Research Papers</a></li>
+               <li><a href="#Source_Code">Source Code</a></li>
+               <li><a href="#Technical_Writings">Technical Writings</a></li>
+               <li><a href="#Web_Apps">Web Apps</a></li>
                <li><a href="#Me">Me</a></li>
             </ul>
          </div>
@@ -445,7 +450,7 @@
                <h2>About</h2>
             </a>
             <br/>
-            <h3>Hello! I'm <strong>William Gilreath.</strong>&nbsp <x6>(he/him)</x6></h3>
+             <x3>Hello! I'm <strong>William Gilreath</strong>&nbsp; <x6>(he/him)</x6></x3>
             <h4>I am a multifaceted software engineer, web developer, mathematician, and computer scientist.</h4>
             <br/>
             <p style="width: 950px;"> I love working with software--developing, testing, writing, and analyzing. In my spare time, I write both code and technical articles, and narrative prose--novels, short stories, book chapters, and poetry.
@@ -458,7 +463,7 @@
             </a>
             <br/>
             <p style="width: 950px;">I have an inactive blog about my technical dabblings and other things...entitled
-               <a href="http://wgilreath.blogspot.com/">"Much Ado About Nothing"</a> where I write about this, that, and the other, but not of late.
+               <a href="http://wgilreath.blogspot.com/">"Much Ado About Nothing"</a> where I write about this, that, and the other, but not of late.</p>
                <br/>
             <h3>ZeptoN</h3>
             <p>For a current project, a new programming language "<a href="https://zepton-lang.blogspot.com/">ZeptoN</a>" from "zepto" + "N". A small programming language that is the Nth programming language (as programming languages go from 1 to N) where this is the Nth language.<br/><br/>
@@ -477,7 +482,6 @@
             <br/>
             </code>
             <br/>
-            </p>
          </article>
          <article>
             <a id="Books">
@@ -499,7 +503,7 @@
             </ul>
          </article>
          <article>
-            <a id="Research Papers">
+            <a id="Research_Papers">
                <h2>Research Papers</h2>
             </a>
             <br/>
@@ -549,11 +553,11 @@
                -->
          </article>
          <article>
-            <a id="Source Code">
+            <a id="Source_Code">
                <h2>Source Code</h2>
             </a>
             <br/>
-            <p style="width: 950px;">
+            
             <ul>
                <li>
                   <p><a href="https://wgilreath.github.io/WEJAC/">WEJAC</a> - Will's Elided Java Api Compiler, a javac alternative that has simpler and fewer command-line options. The user manual for WEJAC is available as an <a href="https://www.smashwords.com/books/view/948750">e-book</a> on Smashwords in various formats.
@@ -597,7 +601,9 @@
                   </p>
                </li>
             </ul>
-            <h3>FunCL Code Example...</h3>
+             
+             
+             <h3>FunCL Code Example...</h3>
             <code>
             <br/>
             &nbsp;&nbsp;&nbsp;DEF HELLOWORLD<br/>
@@ -609,7 +615,7 @@
             <br/>
          </article>
          <article>
-            <a id="Technical Writings">
+            <a id="Technical_Writings">
                <h2>Technical Writings</h2>
             </a>
             <br/>
@@ -662,14 +668,12 @@
                   </p>
                </li>
             </ul>
-            </p>
          </article>
          <article>
-            <a id="Web Apps">
+            <a id="Web_Apps">
                <h2>Web Apps</h2>
             </a>
             <br/>
-            <p style="width: 950px;">
             <ul>
                <li>
                   <p>
@@ -703,20 +707,20 @@
                </li>
             </ul>
          </article>
-         <p align="center">
+         <p class="footer">
             <a href="#About">About</a> |
             <a href="#Blog">Blog</a> |
             <a href="#Books">Books</a> |
-            <a href="#Research Papers">Research Papers</a> |
-            <a href="#Source Code">Source Code</a> |
-            <a href="#Technical Writings">Technical Writings</a> |
-            <a href="#Web Apps">Web Apps</a> |
+            <a href="#Research_Papers">Research Papers</a> |
+            <a href="#Source_Code">Source Code</a> |
+            <a href="#Technical_Writings">Technical Writings</a> |
+            <a href="#Web_Apps">Web Apps</a> |
             <a href="#Me">Me</a>
          </p>
       </div>
       <footer>
          <div class="footer-bottom">
-            <p>© Copyright 2019 <a style='text-decoration:none; text-underline:none' href="mailto:will.f.gilreath@gmail.com">William F. Gilreath</a>. All Rights Reserved. </p>
+            <p>&copy; Copyright 2019 <a style='text-decoration:none; text-underline:none' href="mailto:will.f.gilreath@gmail.com">William F. Gilreath</a>. All Rights Reserved. </p>
          </div>
       </footer>
       <!-- Clicky site tracking code -->
