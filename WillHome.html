@@ -1,849 +1,727 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>William F. Gilreath's Home Page: A Nexus of Code, Writings, Apps, and Me</title>
-<style>
-
-@import url(http://fonts.googleapis.com/css?family=Exo+2:100,200,400);
-
-body {
-  xbackground: #00A0EB;
-  background: white;
-  margin:0;
-  padding:0;
-  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #666;
-  font-weight: 200;
-}
-
-* {
-  margin:0;
-  padding:0;
-}
-
-/** element defaults **/
-table {
-  width: 100%;
-  text-align: left;
-}
-
-th, td {
-  padding: 10px 10px;
-}
-
-th {
-  xcolor: #666;
-  color: blue;
-  background: #ccc none repeat-x scroll left top;
-}
-
-td {
-  border-bottom: 1px solid #ccc;
-}
-
-code, blockquote {
-  display: block;
-  border-left: 5px solid #222;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-code {
-  background-color: #222;
-  color:#ccc;
-  border: none;
-}
-blockquote {
-  border-left: 5px solid #222;
-}
-
-blockquote p {
-  font-style: italic;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin: 0;
-  color: #333;
-  height: 1%;
-}
-
-p {
-  line-height: 1.9em;
-  margin-bottom: 20px;
-}
-
-a {
-  color: #00A0EB;
-}
-
-a:hover {
-  color: #FF6D29;
-}
-
-a:focus {
-  outline: none;
-}
-
-
-a.button { 
-    background-color: #00A0EB;
-    border-radius: 5px 5px 5px 5px;
-    color: #FFFFFF;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 8px 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-a.button:hover {
-  background-color: #FF6D29;
-}
-
-
-fieldset {
-  display: block;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-
-fieldset legend {
-  font-weight: bold;
-  font-size: 13px;
-  padding-right: 10px;
-  color: #444;
-}
-
-fieldset form {
-  padding-top: 15px;
-}
-
-fieldset p label {
-  float: left;
-  width: 150px;
-}
-
-form input, form select, form textarea {
-  padding: 5px;
-  color: #333333;
-  border: 1px solid #ddd;
-  border-right:1px solid #ccc;
-  border-bottom:1px solid #ccc;
-  
-  background-color:#444;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-}
-
-form input.formbutton {
-  border: none;
-  background: #444;
-  color: #ffffff;
-  font-weight: bold;
-  padding: 6px 10px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  width: auto;
-  overflow: visible;
-}
-
-form.searchform input {
-  font-size: 15px;
-    padding: 6px;
-}
-
-form.searchform p {
-  margin: 5px 0;
-}
-
-
-span.required {
-  color: #ff0000;
-}
-
-h1 {
-  color: #000;
-  font-size: 35px;
-  font-family: 'Exo 2', Arial, sans-serif;
-}
-
-h2 {
-  color: #000;
-  font-size: 32px;
-  letter-spacing: 0px;
-  font-weight: normal;
-  padding: 0 0 5px;
-  margin: 0;
-  font-family: 'Exo 2', Arial, sans-serif;
-}
-
-h3 {
-  color: #00A0EB;
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 10px;
-  letter-spacing: -1px;
-  font-family: 'Exo 2', Arial, sans-serif;
-}
-
-h4 {
-    font-family: 'Exo 2', Arial, sans-serif;
-    color: #FF6D29;
-    font-size: 18px;
-    font-weight: normal;
-    padding-bottom: 10px;
-}
-
-h5 {
-  padding-bottom: 10px;
-  font-size: 16px;
-  color: #999;
-}
-
-ul, ol {
-  margin: 0 0 35px 35px;
-}
-
-li {
-  padding-bottom: 5px;
-}
-
-li ol, li ul {
-  font-size: 1.0em;
-  margin-bottom: 0;
-  padding-top: 5px;
-}
-
-.width {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.container {
-
-width: “*”
-
-}
-
-#xcontainer {
-  background-color: #fff;
-  width: 980px;
-  margin: 0 auto;
-}
-
-#container {
-  background-color: #fd6;
-  width: *;
-  margin: 0 auto;
-}
-
-
-header {
-  padding: 30px 20px;
-  background: #444;
-  margin: 0 auto;
-  text-align:left;
-}
-
-header h1 a, header h1 a:hover {
- color: #fff;
-    font-size: 55px;
-    font-weight: normal;
-    letter-spacing: -2px;
-    line-height:45px;
-    text-decoration: none;
-    text-transform: lowercase;
-}
-header h1 a span { 
-  color: #00A0EB;
-}
-
-header h2 {
-  xcolor: #555;
-  color: white;  
-  font-size: 13px;
-  font-weight: 200;
-  letter-spacing: 0;
-}
-
-nav {
-  xbackground-color: #222;
-  background-color: grey;
-  xbackground-color: ;#FD6;
-
-  border-bottom: 2px solid #eee;
-  height: 45px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  float: left;
-  display: block;
-  padding: 0;
-}
-
-
-nav ul li a {
-    xcolor: #6f6f6f;
-    xcolor: yellow;
-    color: #fd6;
-    display: block;
-    font-family: 'Exo 2',Arial,sans-serif;
-    font-size: 13px;
-    letter-spacing: 0;
-   margin: 0;
-    padding: 15px 17px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-nav ul li.selected a,
-nav ul li.selected a:hover { 
-  xcolor: #fff;
-  xcolor: #fd6;
-  xcolor: grey; 
-  color: #444;
-  font-weight:bold;
-}
-
-
-nav ul li a:hover {
-  color: #eee;
-  text-decoration: none;
-}
-
-img.header-image { padding-top: 10px;
-      margin-bottom: -3px; }
-
-#body {
-  background: none;
-  margin: 5px auto 0;
-  padding: 0;
-  clear: both;
-}
-
-#content {
-    float: left;
-    width: 71%;
-}
-
-article {
-    padding: 10px 10px 20px 5px;
- }
-
-article h2 { 
-  font-weight: bold;
-    padding-bottom: 0;
-}
-
-article .article-info {
-    color: #999999;
-    font-size: 12px;
-    font-style: italic;
-    padding: 0 0 10px 0;
-}
-
-article .article-info a { 
-  color: #666;
-}
-
-.sidebar {
-    float: right;
-    width: 28%;
-  margin-top: 10px;
-}
-
-.sidebar h4 {
-  padding-bottom: 0;
-  font-size: 15px;
-  font-weight: 100;
-  color: #fff;
-  padding: 7px 7px;
-  background-color: #00A0EB;
-  border-bottom: 3px solid #eee;
-}
-
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sidebar ul li {
-  margin-bottom: 20px;
-  line-height: 1.9em;
-}
-
-.sidebar li ul {
-    list-style: none outside none;
-    margin: 0px;
-}
-
-.sidebar li ul li {
-  display: block;
-  border-top: none;
-  padding: 7px;
-  margin: 0;
-  line-height: 1.5em;
-  font-size: 13.5px;
-}
-
-.sidebar li ul li.text { 
-  border-bottom: none;
-}
-
-
-
-.sidebar li ul li a {
-  font-weight: normal;
-  color: #666;
-}
-
-.sidebar li ul li a:hover {
-  color: #000;
-}
-
-
-.sidebar li ul li a.readmore {
-   color: #00A0EB;
-   font-weight: bold;
-}
-
-
-.sidebar li ul li a.readmore:hover {
-  color: #FF6D29;
-}
-
-
-
-
-.clear {
-  clear: both;
-}
-
-footer {
-  margin:20px auto 0;
-  background: #222;
-  border-top: 2px solid #eee;
-}
-
-footer p {
-  text-align: left;
-  color: #ccc;
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
-}
-
-footer p a {
-  xcolor: #ccc;
-  color: red;
-  font-weight: bold;
-}
-
-.footer-content {
-  padding: 20px 25px 30px;
-}
-
-footer .footer-content ul {
-  width: 260px;
-  list-style: none;
-  margin: 0 65px 0 0;
-  padding: 0;
-  float: left;
-}
-
-footer .footer-content li {
-  padding: 5px 5px;
-}
-
-footer .footer-content li a, footer .footer-content h4 {
-}
-
-footer .footer-content li a {
-    color: #505050;
-    font-size: 13px;
-    text-decoration: underline;
-}
-
-footer .footer-content li a:hover { 
-  color: #909090;
-}
-
-footer .footer-content h4 {
-    color: #80D7FF;
-    font-size: 20px;
-    font-weight: normal;
-    padding-bottom: 0;
-}
-
-footer .footer-content ul.endfooter {
-  margin-right: 0;
-}
-footer .footer-bottom {
-  padding: 10px;
-  text-align: center;
-  background-color: #999;
-}
-
-footer .footer-bottom p {
-  text-align: center;
-}
-
-footer .footer-bottom p, footer .footer-bottom p a {
-  xcolor: #666;
-  color: white;
-  font-family: Verdana;
-}
-  
-</style>
-  </head>
-
-  <body>
-    <div id="container">
-      <header>
-        <div class="width">
-          <h1><a href="https://wgilreath.github.io/WillHome.html">William<span>Gilreath</span></a></h1>
-          <h2>Multifaceted, versatile software development engineer, computer scientist, and writer.</h2>
-        </div>
-      </header>
-    </div>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>William F. Gilreath's Home Page: A Nexus of Code, Writings, Apps, and Me</title>
+      <style>
+         @import url(http://fonts.googleapis.com/css?family=Exo+2:100,200,400);
+         body {
+         background: white;
+         margin:0;
+         padding:0;
+         font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+         font-size: 16px;
+         color: #666;
+         font-weight: 200;
+         }
+         * {
+         margin:0;
+         padding:0;
+         }
+         /** element defaults **/
+         table {
+         width: 100%;
+         text-align: left;
+         }
+         th, td {
+         padding: 10px 10px;
+         }
+         th {
+         color: blue;
+         background: #ccc none repeat-x scroll left top;
+         }
+         td {
+         border-bottom: 1px solid #ccc;
+         }
+         code, blockquote {
+         display: block;
+         border-left: 5px solid #222;
+         padding: 10px;
+         margin-bottom: 20px;
+         }
+         code {
+         background-color: #222;
+         color:#ccc;
+         border: none;
+         }
+         blockquote {
+         border-left: 5px solid #222;
+         }
+         blockquote p {
+         font-style: italic;
+         font-family: Georgia, "Times New Roman", Times, serif;
+         margin: 0;
+         color: #333;
+         height: 1%;
+         }
+         p {
+         line-height: 1.9em;
+         margin-bottom: 20px;
+         }
+         a {
+         color: #00A0EB;
+         }
+         a:hover {
+         color: #FF6D29;
+         }
+         a:focus {
+         outline: none;
+         }
+         a.button {
+         background-color: #00A0EB;
+         border-radius: 5px 5px 5px 5px;
+         color: #FFFFFF;
+         display: inline-block;
+         font-size: 13px;
+         font-weight: bold;
+         padding: 8px 15px;
+         text-decoration: none;
+         text-transform: uppercase;
+         }
+         a.button:hover {
+         background-color: #FF6D29;
+         }
+         fieldset {
+         display: block;
+         border: none;
+         border-top: 1px solid #ccc;
+         }
+         fieldset legend {
+         font-weight: bold;
+         font-size: 13px;
+         padding-right: 10px;
+         color: #444;
+         }
+         fieldset form {
+         padding-top: 15px;
+         }
+         fieldset p label {
+         float: left;
+         width: 150px;
+         }
+         form input, form select, form textarea {
+         padding: 5px;
+         color: #333333;
+         border: 1px solid #ddd;
+         border-right:1px solid #ccc;
+         border-bottom:1px solid #ccc;
+         background-color:#444;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 13px;
+         }
+         form input.formbutton {
+         border: none;
+         background: #444;
+         color: #ffffff;
+         font-weight: bold;
+         padding: 6px 10px;
+         font-size: 12px;
+         letter-spacing: 1px;
+         width: auto;
+         overflow: visible;
+         }
+         form.searchform input {
+         font-size: 15px;
+         padding: 6px;
+         }
+         form.searchform p {
+         margin: 5px 0;
+         }
+         span.required {
+         color: #ff0000;
+         }
+         h1 {
+         color: #000;
+         font-size: 35px;
+         font-family: 'Exo 2', Arial, sans-serif;
+         }
+         h2 {
+         color: #000;
+         font-size: 32px;
+         letter-spacing: 0px;
+         font-weight: normal;
+         padding: 0 0 5px;
+         margin: 0;
+         font-family: 'Exo 2', Arial, sans-serif;
+         }
+         h3 {
+         color: #00A0EB;
+         font-size: 24px;
+         font-weight: normal;
+         margin-bottom: 10px;
+         letter-spacing: -1px;
+         font-family: 'Exo 2', Arial, sans-serif;
+         }
+         h4 {
+         font-family: 'Exo 2', Arial, sans-serif;
+         color: #FF6D29;
+         font-size: 18px;
+         font-weight: normal;
+         padding-bottom: 10px;
+         }
+         h5 {
+         padding-bottom: 10px;
+         font-size: 16px;
+         color: #999;
+         }
+            
+         x6 {
+         color: #00A0EB;
+         font-size: 16px;
+         font-weight: normal;
+         margin-bottom: 10px;
+         letter-spacing: -1px;
+         font-family: 'Exo 2', Arial, sans-serif;
+         }          
+          
+         ul, ol {
+         margin: 0 0 35px 35px;
+         }
+         li {
+         padding-bottom: 5px;
+         }
+         li ol, li ul {
+         font-size: 1.0em;
+         margin-bottom: 0;
+         padding-top: 5px;
+         }
+         .width {
+         width: 960px;
+         margin: 0 auto;
+         }
+         .container {
+         width: “*”
+         }
+         #xcontainer {
+         background-color: #fff;
+         width: 980px;
+         margin: 0 auto;
+         }
+         #container {
+         background-color: #fd6;
+         width: *;
+         margin: 0 auto;
+         }
+         header {
+         padding: 30px 20px;
+         background: #444;
+         margin: 0 auto;
+         text-align:left;
+         }
+         header h1 a, header h1 a:hover {
+         color: #fff;
+         font-size: 55px;
+         font-weight: normal;
+         letter-spacing: -2px;
+         line-height:45px;
+         text-decoration: none;
+         text-transform: lowercase;
+         }
+         header h1 a span {
+         color: #00A0EB;
+         }
+         header h2 {
+         color: white;
+         font-size: 13px;
+         font-weight: 200;
+         letter-spacing: 0;
+         }
+         nav {
+         background-color: grey;
+         border-bottom: 2px solid #eee;
+         height: 45px;
+         }
+         nav ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         }
+         nav ul li {
+         float: left;
+         display: block;
+         padding: 0;
+         }
+         nav ul li a {
+         xcolor: #6f6f6f;
+         xcolor: yellow;
+         color: #fd6;
+         display: block;
+         font-family: 'Exo 2',Arial,sans-serif;
+         font-size: 13px;
+         letter-spacing: 0;
+         margin: 0;
+         padding: 15px 17px;
+         text-decoration: none;
+         text-transform: uppercase;
+         }
+         nav ul li.selected a,
+         nav ul li.selected a:hover {
+         xcolor: #fff;
+         xcolor: #fd6;
+         xcolor: grey;
+         color: #444;
+         font-weight:bold;
+         }
+         nav ul li a:hover {
+         color: #eee;
+         text-decoration: none;
+         }
+         img.header-image { padding-top: 10px;
+         margin-bottom: -3px; }
+         #body {
+         background: none;
+         margin: 5px auto 0;
+         padding: 0;
+         clear: both;
+         }
+         #content {
+         float: left;
+         width: 71%;
+         }
+         article {
+         padding: 10px 10px 20px 5px;
+         }
+         article h2 {
+         font-weight: bold;
+         padding-bottom: 0;
+         }
+         article .article-info {
+         color: #999999;
+         font-size: 12px;
+         font-style: italic;
+         padding: 0 0 10px 0;
+         }
+         article .article-info a {
+         color: #666;
+         }
+         .sidebar {
+         float: right;
+         width: 28%;
+         margin-top: 10px;
+         }
+         .sidebar h4 {
+         padding-bottom: 0;
+         font-size: 15px;
+         font-weight: 100;
+         color: #fff;
+         padding: 7px 7px;
+         background-color: #00A0EB;
+         border-bottom: 3px solid #eee;
+         }
+         .sidebar ul {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+         }
+         .sidebar ul li {
+         margin-bottom: 20px;
+         line-height: 1.9em;
+         }
+         .sidebar li ul {
+         list-style: none outside none;
+         margin: 0px;
+         }
+         .sidebar li ul li {
+         display: block;
+         border-top: none;
+         padding: 7px;
+         margin: 0;
+         line-height: 1.5em;
+         font-size: 13.5px;
+         }
+         .sidebar li ul li.text {
+         border-bottom: none;
+         }
+         .sidebar li ul li a {
+         font-weight: normal;
+         color: #666;
+         }
+         .sidebar li ul li a:hover {
+         color: #000;
+         }
+         .sidebar li ul li a.readmore {
+         color: #00A0EB;
+         font-weight: bold;
+         }
+         .sidebar li ul li a.readmore:hover {
+         color: #FF6D29;
+         }
+         .clear {
+         clear: both;
+         }
+         footer {
+         margin:20px auto 0;
+         background: #222;
+         border-top: 2px solid #eee;
+         }
+         footer p {
+         text-align: left;
+         color: #ccc;
+         font-size: 12px;
+         margin: 0;
+         padding: 0;
+         }
+         footer p a {
+         xcolor: #ccc;
+         color: red;
+         font-weight: bold;
+         }
+         .footer-content {
+         padding: 20px 25px 30px;
+         }
+         footer .footer-content ul {
+         width: 260px;
+         list-style: none;
+         margin: 0 65px 0 0;
+         padding: 0;
+         float: left;
+         }
+         footer .footer-content li {
+         padding: 5px 5px;
+         }
+         footer .footer-content li a, footer .footer-content h4 {
+         }
+         footer .footer-content li a {
+         color: #505050;
+         font-size: 13px;
+         text-decoration: underline;
+         }
+         footer .footer-content li a:hover {
+         color: #909090;
+         }
+         footer .footer-content h4 {
+         color: #80D7FF;
+         font-size: 20px;
+         font-weight: normal;
+         padding-bottom: 0;
+         }
+         footer .footer-content ul.endfooter {
+         margin-right: 0;
+         }
+         footer .footer-bottom {
+         padding: 10px;
+         text-align: center;
+         background-color: #999;
+         }
+         footer .footer-bottom p {
+         text-align: center;
+         }
+         footer .footer-bottom p, footer .footer-bottom p a {
+         xcolor: #666;
+         color: white;
+         font-family: Verdana;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <header>
+            <div class="width">
+               <h1><a href="https://wgilreath.github.io/WillHome.html">William<span>Gilreath</span></a></h1>
+               <h2>Multifaceted, versatile software development engineer, computer scientist, and writer.</h2>
+            </div>
+         </header>
+      </div>
       <nav>
-        <div class="width">
-          <ul>
-            <!--<li class="start selected">-->
-            <li><a href="#About">About</a></li>
-            <li><a href="#Blog">Blog</a></li>
-            <li><a href="#Books">Books</a></li>
-            <li><a href="#Research Papers">Research Papers</a></li>
-            <li><a href="#Source Code">Source Code</a></li>
-            <li><a href="#Technical Writings">Technical Writings</a></li>
-            <li><a href="#Web Apps">Web Apps</a></li>
-            <li><a href="#Me">Me</a></li>
-          </ul>
-        </div>
+         <div class="width">
+            <ul>
+               <!--<li class="start selected">-->
+               <li><a href="#About">About</a></li>
+               <li><a href="#Blog">Blog</a></li>
+               <li><a href="#Books">Books</a></li>
+               <li><a href="#Research Papers">Research Papers</a></li>
+               <li><a href="#Source Code">Source Code</a></li>
+               <li><a href="#Technical Writings">Technical Writings</a></li>
+               <li><a href="#Web Apps">Web Apps</a></li>
+               <li><a href="#Me">Me</a></li>
+            </ul>
+         </div>
       </nav>
-
       <div id="body" class="width">
-          <br/>
-          <br/>
-          <article>
-            <a name="About">
-            <h2>About</h2></a>
+         <br/>
+         <br/>
+         <article>
+            <a id="About">
+               <h2>About</h2>
+            </a>
             <br/>
- 
-            <h3>Hello! I'm <strong>William Gilreath.</strong>&nbsp <font size="+1">(he/him)</font></h3>
-
+            <h3>Hello! I'm <strong>William Gilreath.</strong>&nbsp <x6>(he/him)</x6></h3>
             <h4>I am a multifaceted software engineer, web developer, mathematician, and computer scientist.</h4>
             <br/>
-
-            <p style="width: 950px;"> I love working with software--developing, testing, writing, and analyzing. In my spare time, I write both code and technical articles, and narrative prose--novels, short stories, book chapters, and poetry. 
-            I am showcasing some of the algorithms, code, programming languages, research papers, and web apps I have created, written, and published. </p>
-          </article>
-          <article>
-            <a name="Blog">
-            <h2>Blog</h2></a>
-            <br/>
-            <p style="width: 950px;">I have an inactive blog about my technical dabblings and other things...entitled 
-            <a href="http://wgilreath.blogspot.com/">"Much Ado About Nothing"</a> where I write about this, that, and the other, but not of late.
-            <br/>
-            <h3>ZeptoN</h3>
-              <p>For a current project, a new programming language "<a href="https://zepton-lang.blogspot.com/">ZeptoN</a>" from "zepto" + "N". A small programming language that is the Nth programming language (as programming languages go from 1 to N) where this is the Nth language.<br/><br/>
-
-              ZeptoN extends Java by adding a program entity construct like a class (without the object-oriented trimmings), with an implicit program <a href="https://en.wikipedia.org/wiki/Entry_point">entry point</a> as a block. Yet ZeptoN is completely Java syntax and concept compatible. It puts the program back into Java programming!
-
-              <br/><br/>
-              ZeptoN is now available on my <a href="http://github.com/wgilreath/ZeptoN">GitHub repo</a> for download, or the <a href="https://wgilreath.github.io/ZeptoN/">GitHub page</a>. This is the ZeptoN "Echo" trans-compiler which transpiles to Java, and then uses the Java Compiler API to build a Java bytecode .class file. 
-              </p>
-
-<h4>ZeptoN Code Example...</h4>
-<code>
-<br/>&nbsp;&nbsp;&nbsp;prog helloWorld {
-<br/>&nbsp;&nbsp;&nbsp;begin
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println("Hello, World!!!");
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit(0);
-<br/>&nbsp;&nbsp;&nbsp;}
-<br/>
-<br/>            
-</code>
-<br/>
-
+            <p style="width: 950px;"> I love working with software--developing, testing, writing, and analyzing. In my spare time, I write both code and technical articles, and narrative prose--novels, short stories, book chapters, and poetry.
+               I am showcasing some of the algorithms, code, programming languages, research papers, and web apps I have created, written, and published. 
             </p>
-          </article>
-
-
-          <article>
-            <a name="Books">
-            <h2>Books</h2></a>
+         </article>
+         <article>
+            <a id="Blog">
+               <h2>Blog</h2>
+            </a>
+            <br/>
+            <p style="width: 950px;">I have an inactive blog about my technical dabblings and other things...entitled
+               <a href="http://wgilreath.blogspot.com/">"Much Ado About Nothing"</a> where I write about this, that, and the other, but not of late.
+               <br/>
+            <h3>ZeptoN</h3>
+            <p>For a current project, a new programming language "<a href="https://zepton-lang.blogspot.com/">ZeptoN</a>" from "zepto" + "N". A small programming language that is the Nth programming language (as programming languages go from 1 to N) where this is the Nth language.<br/><br/>
+               ZeptoN extends Java by adding a program entity construct like a class (without the object-oriented trimmings), with an implicit program <a href="https://en.wikipedia.org/wiki/Entry_point">entry point</a> as a block. Yet ZeptoN is completely Java syntax and concept compatible. It puts the program back into Java programming!
+               <br/><br/>
+               ZeptoN is now available on my <a href="http://github.com/wgilreath/ZeptoN">GitHub repo</a> for download, or the <a href="https://wgilreath.github.io/ZeptoN/">GitHub page</a>. This is the ZeptoN "Echo" trans-compiler which transpiles to Java, and then uses the Java Compiler API to build a Java bytecode .class file.
+            </p>
+            <h4>ZeptoN Code Example...</h4>
+            <code>
+            <br/>&nbsp;&nbsp;&nbsp;prog helloWorld {
+            <br/>&nbsp;&nbsp;&nbsp;begin
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println("Hello, World!!!");
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit(0);
+            <br/>&nbsp;&nbsp;&nbsp;}
+            <br/>
+            <br/>
+            </code>
+            <br/>
+            </p>
+         </article>
+         <article>
+            <a id="Books">
+               <h2>Books</h2>
+            </a>
             <br/>
             <p style="width: 950px;">Here are some books I have written.</p>
-
-<ul>
-  <li>
-  <p>
-    <a href="https://sites.google.com/site/comparchampsite/">Computer Architecture: A Minimalist Perspective </a> - explores computer architecuture of a one-instruction set computer the ultimate minimal instruction set. 
-  </p></li>
-
-  <li>
-  <p>
-    <a href="https://www.amazon.com/Non-Negative-Absolute-Functionthe-Cogent-Function/dp/3659947113">Non-Negative in Value Absolute in Function--the Cogent Value Function </a> - examines an alternative to the absolute value function, the cogent value function, that is differentiable at zero.
-  </p></li>
-
-
-
-</ul>
-
-
-          </article>
-
-
-
-          <article>
-            <a name="Research Papers">
-            <h2>Research Papers</h2></a>
-            <br/>
-            <p style="width: 950px;">Here are some theoretical research papers I have written, and have been published by the <a href="http://gsjournal.net/">General Science Journal</a>. 
-            </p>
-
-<ul>
-  <li>
-  <p>
-    <a href="http://gsjournal.net/Science-Journals/Research%20Papers/View/6667">
-Division by Zero Fallacies using Transmathematics </a> - examines
-classic division by zero fallacies but from transmathematics
-perspective. </p></li>
-
-
-<li>
-
-  <p> 
-    <a href="http://gsjournal.net/Science-Journals/Research%20Papers/View/6855">
-Instruction Set Completeness Theorem: Concept, Relevance, Proof, and
-Example for Processor Architecture </a> - a mathematical examination
-from formal proof to an example instruction set about the correctness
-of the theorem. 
-    </p>
-</li>
-
-<li>
-
-  <p> 
-    <a href="http://gsjournal.net/Science-Journals/Research%20Papers/View/7240">
-Non-Negative in Value, but Absolute in Function by a Magnum and Parabolin—the 
-Cogent Value Function </a> - mathematical re-definition of the absolute value 
-function that has different properties and does what the existing absolute 
-value function can not. 
-    </p>
-</li>
-
-<li>
-
-  <p> 
-    <a href="https://transmathematica.org/index.php/journal/article/view/7">The Problem of the Two Couriers</a> - an application of transmathematics to a centuries old algebra problem to illustrate division by zero in practice. The paper was published July 2019 at <a href="https://transmathematica.org/index.php/journal/Transmathematica2019">Transmathematica 2019 – The 2nd International Conference on Total Systems</a>. 
-    The presentation given is available as a <a href="https://wgilreath.github.io/Two%20Couriers%20Problem%20Presentation.pdf">PDF</a> or as 
-    <a href="https://wgilreath.github.io/Two%20Couriers%20Problem%20Presentation.key">Keynote</a> set of slides.
-    </p>
-
-</li>
-
-
-</ul>
-
-<p style="width: 950px;">Check out my <a href="https://scholar.google.com/citations?hl=en&user=GCFMOQcAAAAJ" target="_blank">Google Scholar</a> or <a href="https://academic.microsoft.com/search?q=William%20Gilreath&f=&orderBy=1&skip=0&take=10" target="_blank">Microsoft Academic</a> with my other works.</p>
-
-<!--
-https://dblp.uni-trier.de/search?q=William%20Gilreath
-
-dblp computer science bibliography 
-
--->
-
-          </article>
-
-          <article>
-            <a name="Source Code">
-            <h2>Source Code</h2></a>
-            <br/>
-            <p style="width: 950px;">
-
-<ul>
-  <li><p><a href="https://wgilreath.github.io/WEJAC/">WEJAC</a> - Will's Elided Java Api Compiler, a javac alternative that has simpler and fewer command-line options. The user manual for WEJAC is available as an <a href="https://www.smashwords.com/books/view/948750">e-book</a> on Smashwords in various formats.
-
-  </li>
-
-
-  <li><p><a href="https://wgilreath.github.io/DBXShell/">DBXShell</a> - the DropBoX shell connects to a <a href="https://www.dropbox.com/">DropBox storage account</a>, and perform file and folder operations in command-line interface client.</p></li>
-
-  <li><p><a href="https://github.com/wgilreath/KVaaS">KVaaS</a> - a Java library for using the key/value as a service (<a href="https://keyvalue.xyz/">keyvalue.xyz</a>) online web data store.</p></li>
-
-  
-  <li><p>
-      <a href="https://drive.google.com/drive/folders/1aYiZ8sE5HZx7m3LIArrqolbnTcoR7PiM?usp=sharing">Boz</a> - compiler for a programming language "Boz" (a penname of Charles Dickens) developed using <a href="https://javacc.org/"> JavaCC</a>.</p></li>
-
-
-  <li><p>
-      <a href="https://drive.google.com/drive/folders/10OixbMS0Db4w260Mg2FMu3PKGOmnqfWl?usp=sharing">
-Hash Sort</a> - sorting by hashing into a matrix.</p>
-</li>
-
-  <li><p>
-    <a href="https://drive.google.com/drive/folders/1gO19mOJcvOEqxXKIWlZg1UlxnPW1vy49?usp=sharing">XML
-Tokenizer</a> - XML tokenization into tags, attributes, text--a XML token stream.<br>
-    </p></li>
-
-  <li><p>
-    <a href="https://drive.google.com/drive/folders/1e9uz4WbuqcHuy5F0rLElM_lCT7xsmmr6?usp=sharing">
-Binar Shuffle/Sort</a> - shuffle (unsorting) and sorting by using
-bits of binary datum.</p></li>
-
-  <li><p> 
-    <a href="https://github.com/wgilreath/funcl"> FunCL </a>
-- interpreter for the FUNctor Clause Language, a functional style
-programming language that is both like Forth and LISP but without the
-reverse Polish notation or parenthesis.
-    </p></li>
-</ul>
-
-<h3>FunCL Code Example...</h3>
-<code> 
-<br/>
-&nbsp;&nbsp;&nbsp;DEF HELLOWORLD<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PUSH EOLN PUSH "Hello World!!!" ECHO ECHO .<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLOWORLD<br/> 
-&nbsp;&nbsp;&nbsp;.<br/>
-<br/>            
-</code>
-            <br/>
-
-
-
-            </p>
-          </article>
-
+            <ul>
+               <li>
+                  <p>
+                     <a href="https://sites.google.com/site/comparchampsite/">Computer Architecture: A Minimalist Perspective </a> - explores computer architecuture of a one-instruction set computer the ultimate minimal instruction set.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://www.amazon.com/Non-Negative-Absolute-Functionthe-Cogent-Function/dp/3659947113">Non-Negative in Value Absolute in Function--the Cogent Value Function </a> - examines an alternative to the absolute value function, the cogent value function, that is differentiable at zero.
+                  </p>
+               </li>
+            </ul>
+         </article>
          <article>
-            <a name="Technical Writings">
-            <h2>Technical Writings</h2></a>
+            <a id="Research Papers">
+               <h2>Research Papers</h2>
+            </a>
             <br/>
-            <p style="width: 950px;">
-            
-<ul>
-
-
-  <li><p>
-    <a href="https://www.javacodegeeks.com/the-problem-with-creating-generic-arrays.html">The Problem with Creating Generic Arrays</a>
-- a technical article published by JavaCodeGeeks about resolving a problem with generic arrays in Java.<br>
-    </p></li>
-
-
-  <li><p>
-    <a href="https://arxiv.org/abs/cs/0610020">XString</a>
-- a method of "flattening" an XML document into a linear string; then
-an XML document can be handled as a string. Interestingly, one could
-embed XML in XML using an XString.<br>
-    </p></li>
-
-  <li><p> 
-    <a href="https://arxiv.org/abs/cs/0408040"> Hash Sort: A Linear Time
-Complexity Multi-Dimensional Sorting Algorithm</a> - a sorting
-algorithm that uses hashing within a N x N matrix. </p></li>
-
-  <li><p><a href="https://arxiv.org/abs/0811.3448"> Binar Sort: A Linear
-Generalized Sorting Algorithm</a> - a sorting algorithm that partitions like a QuickSort but uses
-extracted bits from the datum element to sort the data into an ordered
-permutation. </p></li>
-
-  <li><p><a href="https://arxiv.org/abs/0811.3449"> Binar Shuffle: Shuffling Bit
-by Bit</a><span style="text-decoration: underline;"> </span>- a shuffle algorithm that uses a "bit schedule" to
-shuffle each datum element into a random permutation.</p></li>
-
-  <li><p> <a href="https://drive.google.com/file/d/0B0bOnp0L3T-qYTM0MDMzM2QtMTE5NS00ODE4LWI0NDYtMjhhYmJkZjNhYjZl/view?usp=sharing">
-Mynx Programming Language</a><span style="text-decoration: underline;"> </span>- the user manual for a programming language I developed that is
-Pascal/Algol-style syntax, but an object-oriented programming language.
-    </p></li>
-
-  <li><p> <a href="https://drive.google.com/open?id=1AVSar4nODkf5VKhFOCcPYFAM7s_8rJJ_">
-Boz Programming Language</a> - the user manual for the the Boz programming language that I developed
-that is a "duck typed" object-oriented programming language. <br>
-    </p></li>
-
-</ul>
-
-
-
+            <p style="width: 950px;">Here are some theoretical research papers I have written, and have been published by the <a href="http://gsjournal.net/">General Science Journal</a>.
             </p>
-          </article>
-
-          <article>
-            <a name="Web Apps">
-            <h2>Web Apps</h2></a>
+            <ul>
+               <li>
+                  <p>
+                     <a href="http://gsjournal.net/Science-Journals/Research%20Papers/View/6667">
+                     Division by Zero Fallacies using Transmathematics </a> - examines
+                     classic division by zero fallacies but from transmathematics
+                     perspective. 
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="http://gsjournal.net/Science-Journals/Research%20Papers/View/6855">
+                     Instruction Set Completeness Theorem: Concept, Relevance, Proof, and
+                     Example for Processor Architecture </a> - a mathematical examination
+                     from formal proof to an example instruction set about the correctness
+                     of the theorem.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="http://gsjournal.net/Science-Journals/Research%20Papers/View/7240">
+                     Non-Negative in Value, but Absolute in Function by a Magnum and Parabolin—the
+                     Cogent Value Function </a> - mathematical re-definition of the absolute value
+                     function that has different properties and does what the existing absolute
+                     value function can not.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://transmathematica.org/index.php/journal/article/view/7">The Problem of the Two Couriers</a> - an application of transmathematics to a centuries old algebra problem to illustrate division by zero in practice. The paper was published July 2019 at <a href="https://transmathematica.org/index.php/journal/Transmathematica2019">Transmathematica 2019 – The 2nd International Conference on Total Systems</a>.
+                     The presentation given is available as a <a href="https://wgilreath.github.io/Two%20Couriers%20Problem%20Presentation.pdf">PDF</a> or as
+                     <a href="https://wgilreath.github.io/Two%20Couriers%20Problem%20Presentation.key">Keynote</a> set of slides.
+                  </p>
+               </li>
+            </ul>
+            <p style="width: 950px;">Check out my <a href="https://scholar.google.com/citations?hl=en&user=GCFMOQcAAAAJ" target="_blank">Google Scholar</a> or <a href="https://academic.microsoft.com/search?q=William%20Gilreath&f=&orderBy=1&skip=0&take=10" target="_blank">Microsoft Academic</a> with my other works.</p>
+            <!--
+               https://dblp.uni-trier.de/search?q=William%20Gilreath
+               
+               dblp computer science bibliography
+               
+               -->
+         </article>
+         <article>
+            <a id="Source Code">
+               <h2>Source Code</h2>
+            </a>
             <br/>
             <p style="width: 950px;">
-
-<ul>
-
-  <li> <p>
-    <a href="https://wgilreath.github.io/sequrama.html"> SEQu-RAmA </a> - the Search Engine QUery - Results AccuMulator Aggregator. A <a href="https://informationtwist.wordpress.com/2014/05/16/sequrama-search-project/">"super search"</a> engine that searches via other search engines around the planet...search of search. Essentially, a web scraping search engine that searches and combines results among different search engines.  <a href="https://www.linkedin.com/pulse/seek-ye-shall-search-william-gilreath/">Shortpaper on LinkedIn</a> or <a href="https://wgilreath.github.io/SEQu-RAmA_Whitepaper.pdf">Whitepaper (PDF)</a>
-  </p>
-  </li>
-</ul>
-
-          </article>
-
-          <article>
-            <a name="Me">
-            <h2>Me</h2></a>
+            <ul>
+               <li>
+                  <p><a href="https://wgilreath.github.io/WEJAC/">WEJAC</a> - Will's Elided Java Api Compiler, a javac alternative that has simpler and fewer command-line options. The user manual for WEJAC is available as an <a href="https://www.smashwords.com/books/view/948750">e-book</a> on Smashwords in various formats.
+               </li>
+               <li>
+                  <p><a href="https://wgilreath.github.io/DBXShell/">DBXShell</a> - the DropBoX shell connects to a <a href="https://www.dropbox.com/">DropBox storage account</a>, and perform file and folder operations in command-line interface client.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/wgilreath/KVaaS">KVaaS</a> - a Java library for using the key/value as a service (<a href="https://keyvalue.xyz/">keyvalue.xyz</a>) online web data store.</p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://drive.google.com/drive/folders/1aYiZ8sE5HZx7m3LIArrqolbnTcoR7PiM?usp=sharing">Boz</a> - compiler for a programming language "Boz" (a penname of Charles Dickens) developed using <a href="https://javacc.org/"> JavaCC</a>.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://drive.google.com/drive/folders/10OixbMS0Db4w260Mg2FMu3PKGOmnqfWl?usp=sharing">
+                     Hash Sort</a> - sorting by hashing into a matrix.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://drive.google.com/drive/folders/1gO19mOJcvOEqxXKIWlZg1UlxnPW1vy49?usp=sharing">XML
+                     Tokenizer</a> - XML tokenization into tags, attributes, text--a XML token stream.<br>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://drive.google.com/drive/folders/1e9uz4WbuqcHuy5F0rLElM_lCT7xsmmr6?usp=sharing">
+                     Binar Shuffle/Sort</a> - shuffle (unsorting) and sorting by using
+                     bits of binary datum.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://github.com/wgilreath/funcl"> FunCL </a>
+                     - interpreter for the FUNctor Clause Language, a functional style
+                     programming language that is both like Forth and LISP but without the
+                     reverse Polish notation or parenthesis.
+                  </p>
+               </li>
+            </ul>
+            <h3>FunCL Code Example...</h3>
+            <code>
+            <br/>
+            &nbsp;&nbsp;&nbsp;DEF HELLOWORLD<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PUSH EOLN PUSH "Hello World!!!" ECHO ECHO .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLOWORLD<br/>
+            &nbsp;&nbsp;&nbsp;.<br/>
+            <br/>
+            </code>
+            <br/>
+         </article>
+         <article>
+            <a id="Technical Writings">
+               <h2>Technical Writings</h2>
+            </a>
             <br/>
             <p style="width: 950px;">
-
-I am a computer scientist, software development engineer, mathematician, poet, writer.&nbsp; 
-<ul>
-    <li><p> 
-      <a href="https://www.linkedin.com/in/wfgilreath/"> LinkedIn</a> - my LinkedIn profile. 
-    </p></li>
-    <li><p> 
-      <a href="https://about.me/williamgilreath"> About.Me</a> - my about.me profile. 
-    </p></li>
-    <li><p>
-      <a href="https://wgilreath.github.io/William%20Gilreath%20Resume%202019p9.pdf">My Resume</a> as a PDF document. E-mail me for alternative formats such as .doc, .txt, .rtf.
-  </p></li>
-</ul>
-
-
+            <ul>
+               <li>
+                  <p>
+                     <a href="https://www.javacodegeeks.com/the-problem-with-creating-generic-arrays.html">The Problem with Creating Generic Arrays</a>
+                     - a technical article published by JavaCodeGeeks about resolving a problem with generic arrays in Java.<br>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://arxiv.org/abs/cs/0610020">XString</a>
+                     - a method of "flattening" an XML document into a linear string; then
+                     an XML document can be handled as a string. Interestingly, one could
+                     embed XML in XML using an XString.<br>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://arxiv.org/abs/cs/0408040"> Hash Sort: A Linear Time
+                     Complexity Multi-Dimensional Sorting Algorithm</a> - a sorting
+                     algorithm that uses hashing within a N x N matrix. 
+                  </p>
+               </li>
+               <li>
+                  <p><a href="https://arxiv.org/abs/0811.3448"> Binar Sort: A Linear
+                     Generalized Sorting Algorithm</a> - a sorting algorithm that partitions like a QuickSort but uses
+                     extracted bits from the datum element to sort the data into an ordered
+                     permutation. 
+                  </p>
+               </li>
+               <li>
+                  <p><a href="https://arxiv.org/abs/0811.3449"> Binar Shuffle: Shuffling Bit
+                     by Bit</a><span style="text-decoration: underline;"> </span>- a shuffle algorithm that uses a "bit schedule" to
+                     shuffle each datum element into a random permutation.
+                  </p>
+               </li>
+               <li>
+                  <p> <a href="https://drive.google.com/file/d/0B0bOnp0L3T-qYTM0MDMzM2QtMTE5NS00ODE4LWI0NDYtMjhhYmJkZjNhYjZl/view?usp=sharing">
+                     Mynx Programming Language</a><span style="text-decoration: underline;"> </span>- the user manual for a programming language I developed that is
+                     Pascal/Algol-style syntax, but an object-oriented programming language.
+                  </p>
+               </li>
+               <li>
+                  <p> <a href="https://drive.google.com/open?id=1AVSar4nODkf5VKhFOCcPYFAM7s_8rJJ_">
+                     Boz Programming Language</a> - the user manual for the the Boz programming language that I developed
+                     that is a "duck typed" object-oriented programming language. <br>
+                  </p>
+               </li>
+            </ul>
             </p>
-          </article>
-
-<p align="center">
-<a href="#About">About</a> | 
-<a href="#Blog">Blog</a> | 
-<a href="#Books">Books</a> | 
-<a href="#Research Papers">Research Papers</a> | 
-<a href="#Source Code">Source Code</a> | 
-<a href="#Technical Writings">Technical Writings</a> | 
-<a href="#Web Apps">Web Apps</a> | 
-<a href="#Me">Me</a> 
-</p>
-
-
+         </article>
+         <article>
+            <a id="Web Apps">
+               <h2>Web Apps</h2>
+            </a>
+            <br/>
+            <p style="width: 950px;">
+            <ul>
+               <li>
+                  <p>
+                     <a href="https://wgilreath.github.io/sequrama.html"> SEQu-RAmA </a> - the Search Engine QUery - Results AccuMulator Aggregator. A <a href="https://informationtwist.wordpress.com/2014/05/16/sequrama-search-project/">"super search"</a> engine that searches via other search engines around the planet...search of search. Essentially, a web scraping search engine that searches and combines results among different search engines.  <a href="https://www.linkedin.com/pulse/seek-ye-shall-search-william-gilreath/">Shortpaper on LinkedIn</a> or <a href="https://wgilreath.github.io/SEQu-RAmA_Whitepaper.pdf">Whitepaper (PDF)</a>
+                  </p>
+               </li>
+            </ul>
+         </article>
+         <article>
+            <a id="Me">
+               <h2>Me</h2>
+            </a>
+            <br/>
+            <p style="width: 950px;">
+               I am a computer scientist, software development engineer, mathematician, poet, writer.&nbsp;
+            <ul>
+               <li>
+                  <p>
+                     <a href="https://www.linkedin.com/in/wfgilreath/"> LinkedIn</a> - my LinkedIn profile.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://about.me/williamgilreath"> About.Me</a> - my about.me profile.
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <a href="https://wgilreath.github.io/William%20Gilreath%20Resume%202019p9.pdf">My Resume</a> as a PDF document. E-mail me for alternative formats such as .doc, .txt, .rtf.
+                  </p>
+               </li>
+            </ul>
+         </article>
+         <p align="center">
+            <a href="#About">About</a> |
+            <a href="#Blog">Blog</a> |
+            <a href="#Books">Books</a> |
+            <a href="#Research Papers">Research Papers</a> |
+            <a href="#Source Code">Source Code</a> |
+            <a href="#Technical Writings">Technical Writings</a> |
+            <a href="#Web Apps">Web Apps</a> |
+            <a href="#Me">Me</a>
+         </p>
       </div>
-<footer>
-<div class="footer-bottom">
-<p>© Copyright 2019 <a style='text-decoration:none; text-underline:none' href="mailto:will.f.gilreath@gmail.com">William F. Gilreath</a>. All Rights Reserved. </p>
-</div>
-<!-- revised June 23, 2019 adding "Books" and Google Scholar Profile -->
-</footer>
-
-	<!-- Clicky site tracking code -->
-	<a title="" href="http://clicky.com/101158188" target="_blank">.</a>
-	<script src="//static.getclicky.com/js" type="text/javascript"></script>
-	<script type="text/javascript">try{ clicky.init(101158188); }catch(e){}</script>
-
-
-<script src="//t1.extreme-dm.com/f.js" id="eXF-wilgil-0" async defer></script>
-
-  </body>
+      <footer>
+         <div class="footer-bottom">
+            <p>© Copyright 2019 <a style='text-decoration:none; text-underline:none' href="mailto:will.f.gilreath@gmail.com">William F. Gilreath</a>. All Rights Reserved. </p>
+         </div>
+      </footer>
+      <!-- Clicky site tracking code -->
+      <a title="" href="http://clicky.com/101158188" target="_blank">.</a>
+      <script src="//static.getclicky.com/js" type="text/javascript"></script>
+      <script type="text/javascript">try{ clicky.init(101158188); }catch(e){}</script>
+   </body>
 </html>
