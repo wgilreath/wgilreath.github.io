@@ -1,0 +1,138 @@
+William F. Gilreath
+345 Commercial Street NE
+Salem, Oregon 97301
+(503)-602-7495
+
+SUMMARY
+
+I am a multifaceted software engineer, web developer, and computer scientist. I love working with software especially developing, testing, writing, and analyzing code. In my spare time, I write both code, technical papers, and narrative prose.
+
+EXPERIENCE
+
+Web Content Editor/Writer, Hummingbird Innovations — Happy Valley, OR
+September 2019-currently
+
+∙ Research material from various online sources articles, blogs, books, research papers.
+∙ Author content in Wordpress template and edit content, template for best quality.
+∙ Resolve any content issues or web issues in accessing and viewing content.
+
+Unemployed/Free Agent — Salem, OR 
+July 2019-September 2019
+
+I'm a software engineer, so while a free agent I worked on some projects. Three open-source projects I have created on my own are: 
+
+∙ WEJAC - simpler Java compiler. https://wgilreath.github.io/WEJAC/  
+∙ DBXShell - DropBox shell to manage DropBox storage. https://wgilreath.github.io/DBXShell/ 
+∙ ZeptoN - ZepC transcompiler in Java for ZeptoN language. https://github.com/wgilreath/ZeptoN
+
+Technical Contributor/Review Editor, Packt Publishing, Ltd. — Mumbai, India (remote work) 
+January 2019-July 2019
+
+∙ Technical Contributor "Java Data Structures and Algorithms" lesson technical assessment questions.
+∙ Technical Contributor "Java Fundamentals" pre- and post-assessment technical assessment questions.
+∙ Technical Contributor "Java Fundamentals" lesson 1 and 2 follow-up technical assessment questions.
+∙ Review Editor "Professional Javascript" checking, evaluation, and testing of technical content and source code.
+
+Program Member/Volunteer, Union Gospel Mission — Salem, OR
+September 2015-September 2018
+
+I became homeless thus lived at the Union Gospel Mission, in a program to get back on my feet. I graduated from this program, so am now an active job seeker. I volunteered in computer support:
+
+∙ Graduate of the New Life Fellowship (NLF) program to recover from homelessness.
+∙ Computer support for front-desk, computer laboratory, staff computers.
+∙ Developed web app to e-mail evaluations from form to staff.
+∙ Created documents, spreadsheets used by staff in Microsoft Office.
+
+Freelance Software Developer — Picayune, MS
+November 2006-May 2014
+	
+I was my mother's caregiver during her declining years until her death. On the side, I worked software gigs, and odd programming jobs through word of mouth, sologig, etc.
+
+∙ Worked on small software projects, gig to gig; unemployed between gigs.
+∙ Porting legacy code to more modern languages such as FORTRAN, Pascal to Java, C#.
+∙ Implementing custom programs, tools, and utilities for the macOS, Windows, Linux.
+
+Software/Database Engineer, Planning Systems, Inc. — Stennis Space Center, MS
+June 2006-November 2006
+
+∙ Administration of information on MySQL database of sensor/buoy data on Linux server system.
+∙ Developed Java application library for database management utilizing JDBC database driver.
+∙ Wrote data population application with Java and shell scripts to import and export raw data from the database system.
+∙ Assisted in improvement and verification of documentation presented on the intranet used by other scientists and software developers.
+∙ Consulted in the development of a XML-based message software service project in Java.
+
+Independent Technical Author, Kluwer/Springer-Verlag — Picayune, MS
+March 2002-February 2003
+
+∙ Lead author on computer architecture book, with Dr. Phillip A. Laplante, "Computer Architecture: A Minimalist Perspective," published March 2003.
+∙ Researched the technical material relating to computer architecture and engineering for the text.
+∙ Created tables, diagrams, and visual aids for book chapters illustrating concepts and principles relating to computer architecture.
+∙ Developed chapter questions and exercises as means to assess level of understanding and comprehension of material.
+∙ Created example programs in C programming language, assembly language to demonstrate computer architecture principles.
+
+Java Consultant/Developer, J.R. Simplot Company — Boise, ID
+February 2002-June 2002
+
+∙ Mentored software engineers by hands-on training with Java and the object-oriented paradigm.
+∙ Rewrote and translated existing code to Java for several in house applications.
+∙ Developed in conjunction with other developers a Java applet for interactive data visualization.
+∙ Authored reference documentation for training and education with Java and the object-oriented paradigm using UML.
+
+Firmware/Software Developer, Hewlett Packard/Adecco Technical — Boise, ID
+March 2001-February 2002
+
+∙ Install/webmaster of Apache Tomcat web server usage and development of internal web apps, tools, and utilities.
+∙ Build printer firmware and debug failed builds on a distributed build system using C/C++.
+∙ Investigate and assist in debugging scripts, utilities, and tools in C/C++, UNIX shell, Perl script, and JavaScript.
+∙ Worked and developed embedded C source as part of printer firmware development kit.
+∙ Development of HTML forms, web pages, CGI scripts, JavaScript libraries for web apps and tools.
+∙ Maintenance, testing of software document and development tools in C/C++ in UNIX.
+∙ Provided support for libraries and scripts for distributed build system.
+
+Software Engineer, Micron Technology — Boise, ID
+June 1999-November 2000
+
+∙ Developer for manufacturing data communication system and internal middleware library using TCP/IP and UDP protocols in C++ for Unix/Windows.
+∙ Developed and assisted in database development on Oracle, Sybase in PL/SQL and Transact SQL.
+∙ Code maintenance, revision and support for existing legacy software in C/C++ on Windows, UNIX systems.
+∙ Assisted in assessing and planning requirements for application programming interfaces relating to SOAP and XML based software.
+∙ Developed regression test suites for software applications and utilities in C++ using distributed middleware messaging.
+∙ Instructor for introductory training class for XML and application library in C++. 
+
+Lead Research Assistant, Computer Science Dept, Mississippi State — Starkville, MS
+July 1996-December 1996
+
+∙ Leader for research project with professor in machine learning project for military application.
+∙ Developed, tested, and maintained C/C++ code for machine learning app.
+∙ Modified source code for Improvements in runtime performance, memory usage, and removal leaks.
+∙ Ported source code from SunOS/Unix engineering workstation to Linux on PC.
+∙ Coordinate research efforts with other researchers and reported to professor. 
+
+Engineer Intern/Coop Student, South Mississippi Electric Power Association — Purvis MS
+August 1991-May 1994
+
+∙ Investigated alternative equipment, hardware for new replacement systems in plant equipment.
+∙ Tested new work order/equipment schedule and tracking system.
+∙ Edited user manual explaining use of new work order/equipment schedule system in Oracle.
+∙ Trained and assisted users of new UNIX-based distributed control system.
+
+EDUCATION
+
+Mississippi State University, Starkville, MS — Bachelor’s of Computer Science, 1998.
+
+External Links
+
+LinkedIn:  	https://www.linkedin.com/in/wfgilreath/
+GitHub:    	https://github.com/wgilreath
+Home: 		https://wgilreath.github.io/WillHome.html
+
+PUBLICATIONS
+
+∙ "The Problem with Creating Generic Arrays," Java Code Geeks, October 2019. 
+https://www.javacodegeeks.com/the-problem-with-creating-generic-arrays.html
+
+∙ "The Two Couriers Problem A Problem of Division by Zero in Transmathematics," Transmathematica Journal, June 2019. 
+https://transmathematica.org/index.php/journal/article/view/7
+
+∙ "Instruction Set Completeness Theorem:  Concept, Relevance, Proof, and Example for Processor Architecture,” General Science Journal, March 2017. 
+https://www.gsjournal.net/Science-Journals/Research%20Papers-Miscellaneous/Download/6855
