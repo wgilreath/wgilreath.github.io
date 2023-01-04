@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  Simple test form to illustrate how to test within Python as part of Project Crest. January 4, 2023.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+  </head>
+  <body>
+    <form name="test_form" action="https://vmware.com/no_post" target="_blank" enctype="application/x-www-form-urlencoded" method="post" autocomplete="off" novalidate>
+      <fieldset>
+        <legend>Personal Details Form</legend>
+        <p>
+          <label>
+            Salutation
+            <br />
+            <select name="salutation">
+              <option>--None--</option>
+              <option>Mr.</option>
+              <option>Ms.</option>
+              <option>Mrs.</option>
+              <option>Dr.</option>
+              <option>Prof.</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>First name: <input name="_firstName" /></label>
+        </p>
+        <p>
+          <label>Last name: <input name="_lastName" /></label>
+        </p>
+        <p>
+          Gender :
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+        </p>
+        <p>
+          <label>Email:<input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Date of Birth:<input type="date" name="birthDate"></label>
+        </p>
+        <p>
+          <label>
+          Address :
+          <br />
+          <textarea name="address" cols="30" rows="3"></textarea>
+          </label>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
