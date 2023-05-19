@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- example links, anchors from:
+   https://github.com/atapas/anchors/blob/main/index.html
+   modified to fail--no anchor link or no anchor text or no href attribute
+-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Fav Icon support -->
+	<link rel="icon" href="./images/fav.png">
+
+	<meta property="og:title" content="Anchors" />
+	<meta property="og:image" content="./images/og.png" />
+	<meta property="og:url" content="https://anchors.vercel.app/" />
+	<meta property="og:description" content="Anchors is a demo application to show the use of HTML anchor tags using simple interface and documentation." />
+
+	<meta name="twitter:title" content="Anchors">
+	<meta name="twitter:description" content="Anchors is a demo application to show the use of HTML anchor tags using simple interface and documentation.">
+	<meta name="twitter:image" content="./images/og.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@tapasadhikary">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<title>Anchors</title>
+</head>
+
+<body>
+	<main>
+		<header class="main-header">
+			<h1>Anchors</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="https://twitter.com/tapasadhikary" target="_blank" title="Twitter" rel="noopener noreferrer"></li>
+
+				<li><a href="" target="_blank" title="GitHub" rel="noopener noreferrer"><i
+							data-feather="github"></i></a></li>
+				<li><a href="https://blog.greenroots.info" target="_blank" title="Blog" rel="noopener noreferrer"><i
+							data-feather="pen-tool"></i></a></li>
+				<li><a href="https://www.youtube.com/tapasadhikary" target="_blank" title="YouTube" rel="noopener noreferrer"><i
+							data-feather="youtube"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/tapasadhikary/" target="_blank" title="LinkedIn"
+						rel="noopener noreferrer"><i data-feather="linkedin"></i></a></li>
+				<li><a href="https://tapasadhikary.com" target="_blank" title="Website"><i data-feather="globe"
+							rel="noopener noreferrer"></i></a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<section>
+					<article>
+						<div class="demos">
+							<ul class="demo-list">
+								<h3>The <cite>href</cite> attribute</h3>
+								<p>The href value is the URL of the linked page.</p>
+								<li>
+									<a href="">Click Me</a>
+									<a href="https://github.com/atapas/anchors#the-href-attribute" target="_blank" rel="noopener noreferrer"></a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>The <cite>title</cite> attribute</h3>
+								<p>The title attribute value appears as a tool-tip.</p>
+								<li>
+									<a href="https://example.com" title="Example Domain"></a>
+									<a href="" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>The <cite>rel</cite> attribute</h3>
+								<p>It specifies the relationship between the current document and the linked document.</p>
+								<li>
+									<a rel="nofollow" href="http://www.example.com/"></a>
+									<a href="" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>Open the <cite>email</cite> program</h3>
+								<p>Open your default email program using the mailto value set to the href property.</p>
+								<li>
+									<a>Send email No href attribute</a>
+									<a href="https://github.com/atapas/anchors#the-href-attribute" target="_blank" rel="noopener noreferrer"></a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>Open the <cite>phone</cite> program</h3>
+								<p>Open your default phone program using the tel value set to the href property.</p>
+								<li>
+									<a href="">Call +914123456765</a>
+									<a href="https://github.com/atapas/anchors#the-href-attribute" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>Link to a <cite>Script</cite></h3>
+								<p>You can link to a script and execute it with a single click.</p>
+								<li>
+									<a href="javascript:alert('You are awesome, be like it')">Reveal</a>
+									<a href="https://github.com/atapas/anchors#the-href-attribute" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>Link to <cite>sections</cite></h3>
+								<p>You can link to different sections of the same page by linking to elements by id.</p>
+								<li>
+									<a href="#news">Go</a>
+									<a href="https://github.com/atapas/anchors#the-href-attribute" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3> The <cite>download</cite> attribute</h3>
+								<p>
+									Turn a link into a download link.
+								</p>
+								<img src="./images/rajni_image_tmjxoo.jpg" title="Superstar Rajni, the thalaiva" width="100px" height="100px" alt="Thalaiva">
+								<li>
+									<a href="./images/rajni_image_tmjxoo.jpg" download="Thalaiva">Download</a>
+									<a href="https://github.com/atapas/anchors#the-download-attribute" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>The <cite>ping</cite> attribute</h3>
+								<p>
+									The ping attribute specifies a space seprated list of URLs to ping when the link is clicked.
+								</p>
+								<li>
+									<a href="https://example.com" ping="https://example.com/tracking" target="_blank" rel="noopener noreferrer">With a Ping</a>
+									<a href="https://github.com/atapas/anchors#the-ping-attribute" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>The <cite>type</cite> attribute</h3>
+								<p>
+									The type attribute is used to specify the MIME type of the link target.
+								</p>
+								<li>
+									<a type="text/html" href="http://www.example.com/">HTML</a>
+									<a href="https://github.com/atapas/anchors#the-type-attribute" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>The <cite>target</cite> and <cite>rel</cite> attribute</h3>
+								<p>
+									The target attribute specifies where to open the document.
+									The rel attribute specifies the relationship between the current document and the linked document.
+								</p>
+								<li>
+									<a href="https://example.com" target="_blank" rel="noopener noreferrer">New Tab</a>
+									<a href="https://github.com/atapas/anchors#the-target-attribute" target="_blank" rel="noopener noreferrer">Read</a>
+								</li>
+							</ul>
+							<ul class="demo-list">
+								<h3>The <cite>target</cite> attributes</h3>
+								<li><a href="https://example.com" target="_self">same window(target: _self)</a>
+								</li>
+								<li><a href="https://example.com" target="_blank" rel="noopener noreferrer">new tab/window(target:
+										_blank)</a></li>
+								<iframe src="./child-frame.html" frameborder="0"></iframe>
+							</ul>
+							<ul class="demo-list">
+								<h3><cite>Style</cite> anchor tag based on sates</h3>
+								<li class="state-style">
+									<a href="https://example.com" target="_bkank">I Change</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+				<section id="news">
+					<article>
+						<h2>News</h2>
+						<p>
+							<time datetime="2021-12-13">December 13, 2021</time>
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+							adipiscing nec, ultricies sed, dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+							adipiscing nec, ultricies sed, dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+							adipiscing nec, ultricies sed, dolor.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+							adipiscing nec, ultricies sed, dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+							adipiscing nec, ultricies sed, dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+							adipiscing nec, ultricies sed, dolor.
+						</p>
+					</article>
+				</section>
+			</article>
+		</section>
+		<hr style="width:50%;" />
+		<footer>
+			<p>
+				Made with ❤️ by <a
+					href = "https://tapasadhikary.com"
+					target = "_blank"
+					rel ="noopener noreferrer">Tapas Adhikary</a>.
+					If you care, please give a ⭐ to the
+					<a
+						href="https://github.com/atapas/anchors"
+						target = "_blank">
+						GitHub Repo
+					</a>.
+			</p>
+		</footer>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>feather.replace()</script>
+</body>
+
+</html>
