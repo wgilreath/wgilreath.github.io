@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+    Name "Gee-Star" a play on movie "Dark Star"
+    (get)* HTTP Get multiple search engines all in one together
+    (c) November 4 2024 William F. Gilreath (will@wfgilreath.xyz) All Rights Reserved.
+
+-->
+
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>g-Star (get)*</title>
+    <style>
+
+        .center-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        .get_star_input {
+            margin: 0;
+            padding: 5px 15px;
+            font-family: Arial, serif;
+            font-size: 16px;
+            border: 1px solid #0076a3;
+            border-right: 0;
+            border-radius: 5px 5px;
+        }
+
+        .get_star_getit_button {
+            margin: 0;
+            padding: 5px 5px;
+            font-family: Verdana, serif;
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            color: #ffffff;
+            border: solid 1px #0076a3;
+            border-right: 0;
+            background: #ff0000;
+
+            border-radius: 5px 5px;
+        }
+
+        .get_star_close_button {
+            margin: 0;
+            padding: 5px 5px;
+            font-family: Verdana, serif;
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            color: #ffffff;
+            border: solid 1px #0076a3;
+            border-right: 0;
+            background: #0095cd;
+            border-radius: 5px 5px;
+        }
+
+        table.centerBackgroundGrey {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 1100px;
+            height: 200px;
+            background-color: #bbbbbb;
+            text-align: center;
+        }
+
+        table.centerBackgroundWhite {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 1100px;
+            height: 200px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        div.footer {
+            text-align: center;
+            font-family: Courier New, monospace;
+            font-size: 11pt;
+        }
+
+        span.largeRed {
+            color: rgb(255, 0, 0);
+            font-family: Rockwell, sans-serif;
+            font-weight: bold;
+            font-size: 96pt;
+        }
+
+        span.largeOrange {
+            color: rgb(255, 153, 0);
+            font-family: Optima, sans-serif;
+            font-weight: bold;
+            font-size: 96pt;
+        }
+
+        span.largeYellow {
+            color: rgb(255, 255, 0);
+            font-family: Zorque, serif;
+            font-weight: bold;
+            font-size: 96pt;
+        }
+
+        span.largeGreen {
+            color: rgb(51, 204, 0);
+            font-family: Baskerville, serif;
+            font-weight: bold;
+            font-size: 96pt;
+        }
+
+        span.largeBlue {
+            color: rgb(51, 51, 255);
+            font-family: Impact, sans-serif;
+            font-weight: bold;
+            font-size: 96pt;
+        }
+
+        span.largeViolet {
+            color: rgb(204, 102, 204);
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 96pt;
+        }
+
+    </style>
+</head>
+<body>
+<br>
+<div class="center-screen">
+    <table class="centerBackgroundWhite">
+
+        <tbody>
+        <tr>
+            <td><span class="largeRed">(</span>
+                <span class="largeOrange">g</span>
+                <span class="largeYellow">e</span>
+                <span class="largeGreen">t</span>
+                <span class="largeBlue">)</span>
+                <span class="largeViolet">*</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="centerBackgroundGrey">
+        <tbody>
+        <tr>
+            <td>
+
+                <form id="form-get-star">
+                    <label for="input-text"></label>
+                    <input autofocus="" id="input-text" type="text" title="Get it search keywords"
+                           placeholder="Search..." text="Search keywords for getting" class="get_star_input" size="80"
+                           maxlength="80">
+                    <input id="getit-button" type="button" value="&#128269;" title="Get results from search keywords"
+                           class="get_star_getit_button"><!--go-search-->
+                    <input id="close-button" type="button" value="&#9003;"
+                           title="Clear search keywords and close all search windows" class="get_star_close_button">
+                </form>
+
+                <script type="text/javascript">
+
+                    document.addEventListener("keypress", (e) => {
+                        let result = stopFormSubmission(e);
+                        if (result) e.preventDefault();
+                    });
+
+                    function stopFormSubmission(e) {
+                        let hasForm = false;
+                        if (e.key === "Enter") {
+                            e.composedPath().forEach((element) => {
+                                let elementId = element.getAttribute && element.getAttribute("id");
+                                if (elementId === "form-get-star") hasForm = true;
+                            });
+                        }
+
+                        return hasForm;
+                    }
+
+                    let idx = 0;
+                    const winArray = [];
+
+                    const getitButton = document.querySelector('#getit-button');
+                    let inputText = document.querySelector('#input-text');
+                    const closeButton = document.querySelector('#close-button')
+
+                    getitButton.addEventListener('click', clickGetItButton);
+                    closeButton.addEventListener('click', clickCloseButton);
+
+                    function clickCloseButton() {
+
+                        for (let i = 0; i < winArray.length; i++) {
+                            if (winArray[i] != null) {
+                                winArray[i].close();
+                                winArray[i] = null;
+                            }
+                        }
+
+                        inputText.value = '';
+                    }
+
+                    function clickGetItButton() {
+
+                        if (inputText.value === '') {
+                            alert("Empty search text!");
+                            return;
+                        }
+
+                        winArray[idx++] = window.open("https://www.dailymotion.com/search/" + inputText.value + "/videos", "_blank");
+
+                        winArray[idx++] = window.open("https://www.dogpile.com/serp?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://duckduckgo.com/?t=h_&q=" + inputText.value + "&ia=web", "_blank");
+
+                        winArray[idx++] = window.open("https://www.ecosia.org/search?method=index&q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://epdf.pub/search/" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://gibiru.com/results.html?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://search.gmx.com/web/result?q=" + inputText.value + "&origin=web&comp=web_serp_sf&p=gmx-com", "_blank");
+
+                        winArray[idx++] = window.open("https://good-search.org/en/search/?q=" + inputText.value + "&origin=home", "_blank");
+
+                        winArray[idx++] = window.open("https://iask.ai/?mode=question&q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://imgur.com/search?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://www.mojeek.com/search?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://search-naver-com.translate.goog/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=" + inputText.value
+                            + "&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp", "_blank");
+
+                        winArray[idx++] = window.open("https://openverse.org/search?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://www.pdfdrive.to/top-" + inputText.value + "-books", "_blank");
+
+                        winArray[idx++] = window.open("https://www.reddit.com/search/?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://searchcode.com/?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://searx.be/search?q=" + inputText.value, "_blank");
+
+                        winArray[idx++] = window.open("https://slashdot.org/index2.pl?fhfilter=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://www.startpage.com/sp/search?query=" + inputText.value + "&cat=web&pl=opensearch", "_blank");
+
+                        winArray[idx++] = window.open("https://swisscows.com/en/web?query=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://www.usenetarchives.com/index.php?s=" + inputText.value + "&t=0&p=1", "_blank");
+
+                        winArray[idx++] = window.open("https://www.vinden.nl/search?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://search.visymo.com/wsa?q=" + inputText.value + "", "_blank");
+
+                        winArray[idx++] = window.open("https://en.wikipedia.org/w/index.php?search=" + inputText.value + "&ns0=1", "_blank");
+
+                        winArray[idx++] = window.open("https://yandex.com/search/?text=" + inputText.value + "", "_blank");
+
+                    }//end clickButton
+
+                </script>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="centerBackgroundWhite">
+        <tbody>
+        <tr>
+            <td>
+                <div class="footer">Copyright © 2024 William F. Gilreath. All Rights Reserved.</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
